@@ -91,6 +91,18 @@ body{
   font-size:0.85rem;
 }
 .banner .flags{ font-size:1.1rem; letter-spacing:4px; margin-bottom:6px; opacity:0.85;}
+.banner-link{
+  display:inline-block;
+  margin-top:10px;
+  font-size:0.82rem;
+  color:#fbf3e6;
+  background:rgba(0,0,0,0.18);
+  border:1px solid rgba(251,243,230,0.5);
+  border-radius:20px;
+  padding:6px 14px;
+  text-decoration:none;
+}
+.banner-link:hover{ background:rgba(0,0,0,0.3); }
 
 /* ===== Mobile-first base styles ===== */
 .wrap{ max-width:1300px; margin:0 auto; padding:12px 12px 50px; }
@@ -231,6 +243,7 @@ footer{ text-align:center; padding:24px; color:var(--muted); font-size:0.78rem; 
   <div class="flags">🌵 🇲🇽 🌮</div>
   <h1>CDMX Trip Explorer</h1>
   <p>89 places, filtered and sorted your way — food, culture, coffee, nightlife and day trips around Mexico City.</p>
+  <a class="banner-link" href="https://www.google.com/maps/@19.4151633,-99.1830584,14z/data=!4m3!11m2!2sfZ4TeLQ1DEveUi2XQMI08XEGlAo-vQ!3e3?entry=ttu" target="_blank" rel="noopener">📍 Open the "CDMX" list in Google Maps</a>
 </div>
 
 <div class="wrap">
@@ -273,7 +286,5005 @@ footer{ text-align:center; padding:24px; color:var(--muted); font-size:0.78rem; 
 <footer>Compiled from your Google Maps lists, Notion trip notes, and trip-planning recommendations. Distances are approximate.</footer>
 
 <script>
-const DATA = {"airbnb": {"lat": 19.407, "lon": -99.173}, "places": [{"n": "Cardinal Casa de Café", "lat": 19.4173129, "lon": -99.1581324, "typ": ["Café"], "exp": ["Food"], "food": ["Coffee", "Brunch"], "style": ["Modern"], "vibe": ["Relaxed", "Trendy"], "time": ["Morning", "Breakfast", "Afternoon"], "light": "Good anytime", "price": "$$", "rec": [], "grating": 4.5, "greviews": 1495, "score": 8.0, "src": ["Google Maps"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Quick stop", "Casual meal"], "effort": ["Low effort"], "conv": ["Walkable from Airbnb", "Walk-in friendly"], "safety": [], "hood": "Roma Norte, CDMX", "desc": "Popular Roma Norte specialty coffee & brunch spot.", "maps": "https://www.google.com/maps/search/?api=1&query=Cardinal%20Casa%20de%20Caf%C3%A9%20Roma%20Norte%20CDMX"}, {"n": "Cafeología", "lat": 19.3557177, "lon": -99.1637132, "typ": ["Café"], "exp": ["Food"], "food": ["Coffee"], "style": ["Modern"], "vibe": ["Relaxed", "Local"], "time": ["Morning", "Afternoon"], "light": "Good anytime", "price": "$$", "rec": [], "grating": 4.3, "greviews": 109, "score": 7.0, "src": ["Google Maps"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Quick stop"], "effort": ["Low effort"], "conv": ["Short Uber"], "safety": [], "hood": "South CDMX", "desc": "Neighborhood specialty coffee shop.", "maps": "https://www.google.com/maps/search/?api=1&query=Cafeolog%C3%ADa%20CDMX"}, {"n": "Mutante tostadores de café", "lat": 19.5475002, "lon": -99.2206751, "typ": ["Café"], "exp": ["Food"], "food": ["Coffee"], "style": ["Rustic"], "vibe": ["Local"], "time": ["Morning"], "light": "Good anytime", "price": "$", "rec": [], "grating": 4.9, "greviews": 99, "score": 7.5, "src": ["Google Maps"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Quick stop"], "effort": ["Low effort"], "conv": ["Short Uber"], "safety": [], "hood": "Tlalnepantla, Greater CDMX", "desc": "Small-batch coffee roaster, highly rated but a bit out of the way.", "maps": "https://www.google.com/maps/search/?api=1&query=Mutante%20tostadores%20de%20caf%C3%A9%20CDMX"}, {"n": "Pólvora Café", "lat": 19.3392049, "lon": -99.1308841, "typ": ["Café"], "exp": ["Food"], "food": ["Coffee"], "style": ["Modern"], "vibe": ["Relaxed"], "time": ["Morning", "Afternoon"], "light": "Good anytime", "price": "$$$", "rec": [], "grating": 4.9, "greviews": 110, "score": 7.5, "src": ["Google Maps"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Quick stop"], "effort": ["Low effort"], "conv": ["Short Uber"], "safety": [], "hood": "Southeast CDMX", "desc": "Highly-rated coffee shop / roaster.", "maps": "https://www.google.com/maps/search/?api=1&query=P%C3%B3lvora%20Caf%C3%A9%20CDMX"}, {"n": "Qũentin Café - Juárez", "lat": 19.4279563, "lon": -99.1560973, "typ": ["Café"], "exp": ["Food"], "food": ["Coffee"], "style": ["Modern"], "vibe": ["Trendy"], "time": ["Morning", "Afternoon"], "light": "Good anytime", "price": "$$$", "rec": [], "grating": 4.2, "greviews": 358, "score": 7.7, "src": ["Google Maps", "Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Quick stop"], "effort": ["Low effort"], "conv": ["Walkable from Airbnb", "Short Uber"], "safety": [], "hood": "Juárez, CDMX", "desc": "Practical daily-coffee pick with Roma/Condesa/Juárez locations.", "maps": "https://www.google.com/maps/search/?api=1&query=Q%C5%A9entin%20Caf%C3%A9%20Ju%C3%A1rez%20CDMX"}, {"n": "Alquimia Café", "lat": 19.3890237, "lon": -99.1553073, "typ": ["Café"], "exp": ["Food"], "food": ["Coffee"], "style": ["Modern"], "vibe": ["Relaxed"], "time": ["Morning", "Afternoon"], "light": "Good anytime", "price": "$$", "rec": [], "grating": 4.3, "greviews": 162, "score": 7.0, "src": ["Google Maps"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Quick stop"], "effort": ["Low effort"], "conv": ["Short Uber"], "safety": [], "hood": "CDMX", "desc": "Specialty coffee shop.", "maps": "https://www.google.com/maps/search/?api=1&query=Alquimia%20Caf%C3%A9%20CDMX"}, {"n": "Yonke", "lat": 19.4382916, "lon": -99.1557014, "typ": ["Café"], "exp": ["Food"], "food": ["Coffee"], "style": ["Rustic", "Colorful"], "vibe": ["Local", "Casual"], "time": ["Morning"], "light": "Good anytime", "price": "$", "rec": [], "grating": 4.6, "greviews": 169, "score": 7.5, "src": ["Google Maps"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Quick stop"], "effort": ["Low effort"], "conv": ["Walkable from Airbnb"], "safety": [], "hood": "Juárez, CDMX", "desc": "Casual neighborhood coffee spot.", "maps": "https://www.google.com/maps/search/?api=1&query=Yonke%20cafe%20CDMX"}, {"n": "Café Avellaneda", "lat": 19.3483028, "lon": -99.1607341, "typ": ["Café"], "exp": ["Food"], "food": ["Coffee"], "style": ["Modern"], "vibe": ["Local", "Lively"], "time": ["Morning", "Afternoon"], "light": "Good anytime", "price": "$$", "rec": [], "grating": 4.6, "greviews": 3659, "score": 8.2, "src": ["Google Maps"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Quick stop", "Casual meal"], "effort": ["Low effort"], "conv": ["Short Uber"], "safety": [], "hood": "South CDMX", "desc": "Very well reviewed neighborhood coffee shop (3,600+ reviews).", "maps": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20Avellaneda%20CDMX"}, {"n": "Forte", "lat": 19.414804, "lon": -99.159958, "typ": ["Café", "Restaurant"], "exp": ["Food"], "food": ["Coffee", "Brunch"], "style": ["Modern"], "vibe": ["Trendy"], "time": ["Morning", "Breakfast", "Lunch"], "light": "Good anytime", "price": "$$$", "rec": [], "grating": 4.3, "greviews": 829, "score": 7.8, "src": ["Google Maps"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Casual meal"], "effort": ["Low effort"], "conv": ["Walkable from Airbnb"], "safety": [], "hood": "Roma Norte, CDMX", "desc": "Coffee + brunch spot, Roma Norte.", "maps": "https://www.google.com/maps/search/?api=1&query=Forte%20cafe%20Roma%20Norte%20CDMX"}, {"n": "Fonico", "lat": 19.393, "lon": -99.166, "typ": ["Bar"], "exp": ["Nightlife"], "food": ["Cocktails"], "style": ["Modern", "Rooftop"], "vibe": ["Lively", "Sophisticated", "Social"], "time": ["Dinner", "Late night"], "light": "Best at night", "price": "$$$", "rec": [], "grating": null, "greviews": null, "score": 9.0, "src": ["Personal visit"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Date night", "Group dinner"], "effort": ["Low effort"], "conv": ["Short Uber"], "safety": [], "hood": "Nápoles, CDMX", "desc": "Eric's own pick — full classic cocktail bar downstairs plus a lounge-y rooftop upstairs. Very nice at night.", "maps": "https://www.google.com/maps/search/?api=1&query=Fonico%20bar%20CDMX"}, {"n": "Almanegra Café", "lat": 19.414, "lon": -99.165, "typ": ["Café"], "exp": ["Food"], "food": ["Coffee"], "style": ["Minimalist"], "vibe": ["Relaxed", "Local"], "time": ["Morning"], "light": "Good anytime", "price": "$", "rec": [], "grating": 4.4, "greviews": 941, "score": 7.5, "src": ["Google Maps"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Quick stop"], "effort": ["Low effort"], "conv": ["Walkable from Airbnb", "Walk-in friendly"], "safety": [], "hood": "Roma/Condesa, CDMX", "desc": "Original saved coffee shop pick, Roma/Condesa area.", "maps": "https://www.google.com/maps/search/?api=1&query=Almanegra%20Caf%C3%A9%20CDMX"}, {"n": "Panadería Rosetta", "lat": 19.4173, "lon": -99.1594, "typ": ["Bakery"], "exp": ["Food"], "food": ["Pastries", "Coffee"], "style": ["Historic"], "vibe": ["Touristy", "Local"], "time": ["Breakfast", "Morning"], "light": "Good anytime", "price": "$$", "rec": ["Local institution"], "grating": null, "greviews": null, "score": 9.7, "src": ["Notion", "Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Quick stop", "Casual meal"], "effort": ["Low effort"], "conv": ["Walkable from Airbnb", "Long queue"], "safety": [], "hood": "Roma Norte, CDMX", "desc": "Famous guava-and-cheese roll & cardamom bun. Expect a line at the original location. Near your Roma Norte stay.", "maps": "https://www.google.com/maps/search/?api=1&query=Panader%C3%ADa%20Rosetta%20Roma%20Norte%20CDMX"}, {"n": "Café El Jarocho", "lat": 19.3467, "lon": -99.1618, "typ": ["Café"], "exp": ["Food"], "food": ["Coffee"], "style": ["Local", "Colorful"], "vibe": ["Local", "Touristy"], "time": ["Morning", "Afternoon"], "light": "Good anytime", "price": "$", "rec": [], "grating": null, "greviews": null, "score": 7.5, "src": ["Notion"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Quick stop"], "effort": ["Low effort"], "conv": ["Walk-in friendly"], "safety": [], "hood": "Coyoacán, CDMX", "desc": "Classic Coyoacán coffee stand, near the Frida Kahlo museum.", "maps": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20El%20Jarocho%20Coyoac%C3%A1n%20CDMX"}, {"n": "La Calaca", "lat": 19.3467, "lon": -99.1618, "typ": ["Restaurant"], "exp": ["Food"], "food": ["Mexican", "Regional"], "style": ["Colorful", "Rustic"], "vibe": ["Local", "Casual"], "time": ["Lunch", "Dinner"], "light": "Good anytime", "price": "$$", "rec": [], "grating": null, "greviews": null, "score": 8.0, "src": ["Notion", "Friend"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Casual meal"], "effort": ["Low effort"], "conv": ["Short Uber"], "safety": [], "hood": "Coyoacán, CDMX", "desc": "\"Cheaper and gorgeous\" — Mariana's tip.", "maps": "https://www.google.com/maps/search/?api=1&query=La%20Calaca%20restaurante%20Coyoac%C3%A1n%20CDMX"}, {"n": "Los Danzantes", "lat": 19.3467, "lon": -99.1618, "typ": ["Restaurant"], "exp": ["Food"], "food": ["Mexican", "Regional", "Mezcal"], "style": ["Colonial", "Courtyard"], "vibe": ["Sophisticated"], "time": ["Lunch", "Dinner"], "light": "Good anytime", "price": "$$$", "rec": [], "grating": null, "greviews": null, "score": 8.3, "src": ["Notion", "Friend"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Special dinner"], "effort": ["Low effort"], "conv": ["Short Uber", "Reservation required"], "safety": [], "hood": "Coyoacán, CDMX", "desc": "\"Pricier, but good\" — Mariana's tip. Oaxacan-rooted menu, historic Coyoacán courtyard house.", "maps": "https://www.google.com/maps/search/?api=1&query=Los%20Danzantes%20Coyoac%C3%A1n%20CDMX"}, {"n": "Corazón de Maguey", "lat": 19.3467, "lon": -99.1618, "typ": ["Restaurant", "Bar"], "exp": ["Food", "Nightlife"], "food": ["Mexican", "Mezcal"], "style": ["Colonial", "Rooftop"], "vibe": ["Lively", "Social"], "time": ["Dinner", "Late night"], "light": "Good anytime", "price": "$$$", "rec": [], "grating": null, "greviews": null, "score": 7.8, "src": ["Notion"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Group dinner"], "effort": ["Low effort"], "conv": ["Short Uber"], "safety": [], "hood": "Coyoacán, CDMX", "desc": "Coyoacán mezcal restaurant/bar with a rooftop terrace.", "maps": "https://www.google.com/maps/search/?api=1&query=Coraz%C3%B3n%20de%20Maguey%20Coyoac%C3%A1n%20CDMX"}, {"n": "Mercado de San Cosme", "lat": 19.446, "lon": -99.158, "typ": ["Market"], "exp": ["Food", "Culture"], "food": ["Street food", "Mexican"], "style": ["Local"], "vibe": ["Local", "Casual"], "time": ["Morning", "Lunch"], "light": "Good anytime", "price": "$", "rec": [], "grating": null, "greviews": null, "score": 7.0, "src": ["Notion"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Quick stop"], "effort": ["Low effort"], "conv": ["Metro-friendly"], "safety": [], "hood": "San Cosme, CDMX", "desc": "Traditional neighborhood market.", "maps": "https://www.google.com/maps/search/?api=1&query=Mercado%20de%20San%20Cosme%20CDMX"}, {"n": "Maizajo", "lat": 19.415, "lon": -99.16, "typ": ["Restaurant"], "exp": ["Food"], "food": ["Tacos", "Mexican"], "style": ["Rustic"], "vibe": ["Casual", "Trendy"], "time": ["Lunch", "Dinner"], "light": "Good anytime", "price": "$$", "rec": [], "grating": null, "greviews": null, "score": 8.2, "src": ["Notion", "Friend"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Casual meal"], "effort": ["Low effort"], "conv": ["Walkable from Airbnb"], "safety": [], "hood": "Roma, CDMX", "desc": "Traditional taquería downstairs, chic gourmet menu upstairs — Mariana's tip.", "maps": "https://www.google.com/maps/search/?api=1&query=Maizajo%20Roma%20CDMX"}, {"n": "Cariñito Tacos", "lat": 19.42, "lon": -99.16, "typ": ["Restaurant"], "exp": ["Food"], "food": ["Tacos"], "style": ["Colorful"], "vibe": ["Casual", "Trendy"], "time": ["Lunch", "Dinner"], "light": "Good anytime", "price": "$$", "rec": [], "grating": null, "greviews": null, "score": 8.3, "src": ["Notion", "Friend"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Casual meal"], "effort": ["Low effort"], "conv": ["Short Uber"], "safety": [], "hood": "CDMX", "desc": "Fusion-ish tacos with an oriental twist — Mariana's tip.", "maps": "https://www.google.com/maps/search/?api=1&query=Cari%C3%B1ito%20Tacos%20CDMX"}, {"n": "Chico Julio", "lat": 19.415, "lon": -99.16, "typ": ["Restaurant"], "exp": ["Food"], "food": ["Tacos", "Seafood"], "style": ["Colorful"], "vibe": ["Casual", "Trendy"], "time": ["Lunch", "Dinner"], "light": "Good anytime", "price": "$$", "rec": [], "grating": null, "greviews": null, "score": 8.3, "src": ["Notion", "Friend"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Casual meal"], "effort": ["Low effort"], "conv": ["Walkable from Airbnb"], "safety": ["Seafood-heavy"], "hood": "Roma, CDMX", "desc": "Fish & seafood tacos — Mariana's tip.", "maps": "https://www.google.com/maps/search/?api=1&query=Chico%20Julio%20Roma%20tacos%20CDMX"}, {"n": "Cantón Mexicali", "lat": 19.4165048, "lon": -99.167653, "typ": ["Restaurant"], "exp": ["Food"], "food": ["Regional"], "style": ["Historic"], "vibe": ["Local", "Lively"], "time": ["Lunch", "Dinner"], "light": "Good anytime", "price": "$$$", "rec": [], "grating": null, "greviews": null, "score": 8.0, "src": ["Notion", "Friend"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Group dinner"], "effort": ["Low effort"], "conv": ["Walkable from Airbnb", "Reservation required"], "safety": [], "hood": "Condesa, CDMX", "desc": "Chinese-Mexican institution — taquería-style downstairs, fancier upstairs. Highly recommended — Mariana's tip.", "maps": "https://www.google.com/maps/search/?api=1&query=Canton%20Mexicali%20Condesa%20CDMX"}, {"n": "Madre Café", "lat": 19.415, "lon": -99.16, "typ": ["Café"], "exp": ["Food"], "food": ["Coffee", "Brunch"], "style": ["Modern"], "vibe": ["Relaxed"], "time": ["Morning", "Breakfast"], "light": "Good anytime", "price": "$$", "rec": [], "grating": null, "greviews": null, "score": 7.3, "src": ["Notion"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Quick stop"], "effort": ["Low effort"], "conv": ["Walkable from Airbnb"], "safety": [], "hood": "Roma, CDMX", "desc": "Roma neighborhood café.", "maps": "https://www.google.com/maps/search/?api=1&query=Madre%20Caf%C3%A9%20Roma%20CDMX"}, {"n": "Tetetlán", "lat": 19.32, "lon": -99.201, "typ": ["Restaurant"], "exp": ["Food", "Architecture"], "food": ["Contemporary Mexican"], "style": ["Garden", "Design-forward", "Modern"], "vibe": ["Sophisticated", "Romantic"], "time": ["Lunch", "Golden hour"], "light": "Better at sunset", "price": "$$$$", "rec": [], "grating": null, "greviews": null, "score": 8.5, "src": ["Notion", "Friend"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Special dinner"], "effort": ["Moderate effort"], "conv": ["Short Uber", "Reservation required"], "safety": [], "hood": "Pedregal, CDMX", "desc": "\"Expensive and far, but beautiful\" — Mariana's tip. Barragán-adjacent architecture, volcanic-rock garden setting.", "maps": "https://www.google.com/maps/search/?api=1&query=Tetetl%C3%A1n%20restaurante%20Pedregal%20CDMX"}, {"n": "Fonda la 99", "lat": 19.42, "lon": -99.16, "typ": ["Restaurant"], "exp": ["Food"], "food": ["Regional", "Mexican"], "style": ["Local"], "vibe": ["Casual", "Local"], "time": ["Lunch", "Dinner"], "light": "Good anytime", "price": "$$", "rec": [], "grating": null, "greviews": null, "score": 7.5, "src": ["Notion"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Casual meal"], "effort": ["Low effort"], "conv": ["Short Uber"], "safety": [], "hood": "CDMX", "desc": "Yucatecan food, cochinita pibil.", "maps": "https://www.google.com/maps/search/?api=1&query=Fonda%2099.99%20CDMX"}, {"n": "Churrería El Moro", "lat": 19.4326, "lon": -99.1332, "typ": ["Bakery"], "exp": ["Food"], "food": ["Pastries", "Street food"], "style": ["Historic", "Colorful"], "vibe": ["Touristy", "Local"], "time": ["Late night", "Breakfast"], "light": "Best at night", "price": "$", "rec": ["Local institution"], "grating": null, "greviews": null, "score": 8.0, "src": ["Notion"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Quick stop", "Late night"], "effort": ["Low effort"], "conv": ["Metro-friendly", "Long queue"], "safety": [], "hood": "Centro / multiple locations, CDMX", "desc": "Classic CDMX churros institution, open late.", "maps": "https://www.google.com/maps/search/?api=1&query=Churrer%C3%ADa%20El%20Moro%20CDMX"}, {"n": "Esquina Común", "lat": 19.4126, "lon": -99.171, "typ": ["Restaurant"], "exp": ["Food"], "food": ["Contemporary Mexican", "Fine dining"], "style": ["Rooftop", "Design-forward"], "vibe": ["Trendy", "Intimate"], "time": ["Dinner"], "light": "Better at sunset", "price": "$$$", "rec": ["Michelin 1 Star"], "grating": null, "greviews": null, "score": 9.6, "src": ["Notion", "Friend", "Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Special dinner", "Date night"], "effort": ["Low effort"], "conv": ["Walkable from Airbnb", "Long queue"], "safety": [], "hood": "Condesa, CDMX", "desc": "Intimate rooftop tasting-style meal, Condesa. Michelin star but cheap; always packed, no reservations, only open Thu-Sun — Mariana's tip.", "maps": "https://www.google.com/maps/search/?api=1&query=Esquina%20Com%C3%BAn%20Condesa%20CDMX"}, {"n": "Museo Frida Kahlo (Casa Azul)", "lat": 19.3467, "lon": -99.1618, "typ": ["Museum"], "exp": ["Culture", "Art", "History"], "food": [], "style": ["Colorful", "Historic", "Garden"], "vibe": ["Touristy"], "time": ["Morning", "Afternoon"], "light": "Good anytime", "price": "$$", "rec": ["Local institution"], "grating": null, "greviews": null, "score": 9.1, "src": ["Notion", "Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Full-day plan"], "effort": ["Moderate effort"], "conv": ["Short Uber", "Reservation required"], "safety": [], "hood": "Coyoacán, CDMX", "desc": "Frida Kahlo's home. Book online in advance, no in-person tickets.", "maps": "https://www.google.com/maps/search/?api=1&query=Museo%20Frida%20Kahlo%20Casa%20Azul%20Coyoac%C3%A1n"}, {"n": "Museo Anahuacalli", "lat": 19.3467, "lon": -99.1618, "typ": ["Museum"], "exp": ["Culture", "Art", "Archaeology", "Architecture"], "food": [], "style": ["Modern", "Historic"], "vibe": ["Quiet", "Sophisticated"], "time": ["Afternoon"], "light": "Good anytime", "price": "$$", "rec": [], "grating": null, "greviews": null, "score": 9.5, "src": ["Notion", "Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Full-day plan"], "effort": ["Moderate effort"], "conv": ["Short Uber"], "safety": [], "hood": "Coyoacán area, CDMX", "desc": "Diego Rivera's pre-Hispanic collection inside extraordinary volcanic-stone architecture.", "maps": "https://www.google.com/maps/search/?api=1&query=Museo%20Anahuacalli%20CDMX"}, {"n": "Castillo de Chapultepec", "lat": 19.4204, "lon": -99.1818, "typ": ["Museum", "Viewpoint"], "exp": ["History", "Architecture"], "food": [], "style": ["Historic", "Scenic"], "vibe": ["Touristy"], "time": ["Morning", "Afternoon", "Golden hour"], "light": "Good anytime", "price": "$$", "rec": [], "grating": null, "greviews": null, "score": 9.2, "src": ["Notion", "Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Full-day plan"], "effort": ["Moderate effort", "Lots of walking"], "conv": ["Metro-friendly", "Lots of walking"], "safety": [], "hood": "Chapultepec, CDMX", "desc": "Historic rooms, gardens and elevated city views; easy to pair with a Chapultepec walk.", "maps": "https://www.google.com/maps/search/?api=1&query=Castillo%20de%20Chapultepec%20CDMX"}, {"n": "Museo de Arte Moderno", "lat": 19.4204, "lon": -99.1818, "typ": ["Museum"], "exp": ["Art"], "food": [], "style": ["Modern"], "vibe": ["Quiet"], "time": ["Afternoon"], "light": "Good anytime", "price": "$$", "rec": [], "grating": null, "greviews": null, "score": 7.8, "src": ["Notion"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Full-day plan"], "effort": ["Low effort"], "conv": ["Metro-friendly"], "safety": [], "hood": "Chapultepec, CDMX", "desc": "Modern art museum in Chapultepec Park.", "maps": "https://www.google.com/maps/search/?api=1&query=Museo%20de%20Arte%20Moderno%20CDMX"}, {"n": "Museo Nacional de Antropología", "lat": 19.4204, "lon": -99.1818, "typ": ["Museum"], "exp": ["Culture", "History", "Archaeology"], "food": [], "style": ["Modern", "Historic"], "vibe": ["Touristy", "Sophisticated"], "time": ["Morning", "Afternoon"], "light": "Good anytime", "price": "$$", "rec": ["Local institution"], "grating": null, "greviews": null, "score": 10.0, "src": ["Notion", "Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Full-day plan"], "effort": ["Half day"], "conv": ["Metro-friendly"], "safety": [], "hood": "Chapultepec, CDMX", "desc": "Mexico's essential pre-Hispanic museum — do this before Teotihuacán if possible. Most-visited museum in the city.", "maps": "https://www.google.com/maps/search/?api=1&query=Museo%20Nacional%20de%20Antropolog%C3%ADa%20CDMX"}, {"n": "Museo de Arte Popular", "lat": 19.4326, "lon": -99.1332, "typ": ["Museum"], "exp": ["Art", "Culture"], "food": [], "style": ["Colorful"], "vibe": ["Quiet"], "time": ["Afternoon"], "light": "Good anytime", "price": "$", "rec": [], "grating": null, "greviews": null, "score": 7.6, "src": ["Notion"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Quick stop"], "effort": ["Low effort"], "conv": ["Walkable from Airbnb", "Metro-friendly"], "safety": [], "hood": "Centro, CDMX", "desc": "Mexican folk art museum.", "maps": "https://www.google.com/maps/search/?api=1&query=Museo%20de%20Arte%20Popular%20CDMX"}, {"n": "Restaurante El Lago (Lago|Algo)", "lat": 19.4204, "lon": -99.1818, "typ": ["Restaurant"], "exp": ["Food"], "food": ["Contemporary Mexican"], "style": ["Scenic", "Modern"], "vibe": ["Romantic", "Sophisticated"], "time": ["Lunch", "Dinner", "Golden hour"], "light": "Better at sunset", "price": "$$$$", "rec": [], "grating": null, "greviews": null, "score": 7.8, "src": ["Notion"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Special dinner"], "effort": ["Low effort"], "conv": ["Reservation required"], "safety": [], "hood": "Chapultepec, CDMX", "desc": "Lakeside restaurant inside Chapultepec Park (formerly \"El Lago\").", "maps": "https://www.google.com/maps/search/?api=1&query=Lago%20Algo%20restaurante%20Chapultepec%20CDMX"}, {"n": "Teotihuacán", "lat": 19.6925, "lon": -98.8438, "typ": ["Day trip", "Ruins"], "exp": ["Archaeology", "History", "Active"], "food": [], "style": ["Historic", "Scenic"], "vibe": ["Touristy"], "time": ["Morning"], "light": "Best in daylight", "price": "$$", "rec": [], "grating": null, "greviews": null, "score": 10.0, "src": ["Notion", "Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Full-day plan"], "effort": ["High effort", "Lots of walking", "Full day"], "conv": ["Short Uber"], "safety": [], "hood": "Teotihuacán, State of Mexico", "desc": "Enormous pre-Hispanic archaeological city. Go early, hire a proper guide.", "maps": "https://www.google.com/maps/search/?api=1&query=Zona%20Arqueol%C3%B3gica%20de%20Teotihuac%C3%A1n"}, {"n": "Xochimilco (Trajineras)", "lat": 19.2648, "lon": -99.1028, "typ": ["Day trip", "Activity"], "exp": ["Nature", "Active"], "food": [], "style": ["Colorful"], "vibe": ["Lively", "Party", "Social"], "time": ["Afternoon"], "light": "Best in daylight", "price": "$$", "rec": [], "grating": null, "greviews": null, "score": 8.0, "src": ["Notion"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Group dinner", "Full-day plan"], "effort": ["Half day"], "conv": ["Short Uber"], "safety": [], "hood": "Xochimilco, CDMX", "desc": "Colorful trajineras boat ride through the canals.", "maps": "https://www.google.com/maps/search/?api=1&query=Embarcadero%20Nuevo%20Nativitas%20Xochimilco"}, {"n": "Nido de Quetzalcoatl", "lat": 19.468, "lon": -99.249, "typ": ["Viewpoint", "Activity"], "exp": ["Architecture", "Nature"], "food": [], "style": ["Colorful", "Design-forward"], "vibe": ["Quiet"], "time": ["Afternoon"], "light": "Good anytime", "price": "$", "rec": [], "grating": null, "greviews": null, "score": 6.5, "src": ["Notion"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Quick stop"], "effort": ["Moderate effort"], "conv": ["Short Uber"], "safety": [], "hood": "Naucalpan, Greater CDMX", "desc": "Optional/maybe — striking serpent-shaped building, a bit out of the way.", "maps": "https://www.google.com/maps/search/?api=1&query=Nido%20de%20Quetzalcoatl%20CDMX"}, {"n": "Templo Mayor + Zócalo", "lat": 19.4326, "lon": -99.1332, "typ": ["Ruins", "Museum"], "exp": ["Archaeology", "History"], "food": [], "style": ["Historic"], "vibe": ["Touristy"], "time": ["Morning", "Afternoon"], "light": "Good anytime", "price": "$$", "rec": [], "grating": null, "greviews": null, "score": 9.7, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Full-day plan"], "effort": ["Moderate effort"], "conv": ["Metro-friendly", "Walkable from Airbnb"], "safety": [], "hood": "Centro Histórico, CDMX", "desc": "Mexica ruins in the middle of the historic city — archaeology, architecture and street life in one walk.", "maps": "https://www.google.com/maps/search/?api=1&query=Templo%20Mayor%20CDMX"}, {"n": "Muévete en Bici (Reforma Sunday cyclovía)", "lat": 19.427, "lon": -99.169, "typ": ["Activity"], "exp": ["Active", "Nature"], "food": [], "style": ["Scenic"], "vibe": ["Lively", "Social"], "time": ["Morning"], "light": "Best in daylight", "price": "Free", "rec": [], "grating": null, "greviews": null, "score": 9.8, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Full-day plan"], "effort": ["Moderate effort", "Lots of walking"], "conv": ["Walkable from Airbnb", "Bike-friendly"], "safety": [], "hood": "Paseo de la Reforma, CDMX", "desc": "Sunday mornings ~8am-2pm the city opens major roads (Reforma) to bikes/pedestrians — great active-tourism morning.", "maps": "https://www.google.com/maps/search/?api=1&query=Paseo%20de%20la%20Reforma%20CDMX"}, {"n": "Mercado de Coyoacán", "lat": 19.3467, "lon": -99.1618, "typ": ["Market"], "exp": ["Food", "Culture"], "food": ["Street food", "Mexican"], "style": ["Colorful", "Local"], "vibe": ["Lively", "Local"], "time": ["Morning", "Lunch"], "light": "Good anytime", "price": "$", "rec": [], "grating": null, "greviews": null, "score": 8.9, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Casual meal", "Full-day plan"], "effort": ["Low effort"], "conv": ["Short Uber"], "safety": [], "hood": "Coyoacán, CDMX", "desc": "Colorful traditional market — pairs well with Casa Azul for a fuller cultural day.", "maps": "https://www.google.com/maps/search/?api=1&query=Mercado%20de%20Coyoac%C3%A1n%20CDMX"}, {"n": "Palacio de Bellas Artes", "lat": 19.4326, "lon": -99.1332, "typ": ["Museum", "Viewpoint"], "exp": ["Art", "Architecture", "Live performance"], "food": [], "style": ["Historic", "Design-forward"], "vibe": ["Touristy", "Sophisticated"], "time": ["Afternoon", "Dinner"], "light": "Good anytime", "price": "$$", "rec": [], "grating": null, "greviews": null, "score": 9.0, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Full-day plan"], "effort": ["Low effort"], "conv": ["Metro-friendly", "Walkable from Airbnb"], "safety": [], "hood": "Centro Histórico, CDMX", "desc": "Monumental architecture, major murals and performing arts — compact cultural anchor in Centro.", "maps": "https://www.google.com/maps/search/?api=1&query=Palacio%20de%20Bellas%20Artes%20CDMX"}, {"n": "Ballet Folklórico de México (Bellas Artes)", "lat": 19.4326, "lon": -99.1332, "typ": ["Activity"], "exp": ["Live performance", "Culture"], "food": [], "style": ["Historic", "Colorful"], "vibe": ["Touristy", "Sophisticated"], "time": ["Dinner", "Late night"], "light": "Best at night", "price": "$$$", "rec": [], "grating": null, "greviews": null, "score": 9.4, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Special dinner"], "effort": ["Low effort"], "conv": ["Metro-friendly", "Reservation required"], "safety": [], "hood": "Centro Histórico, CDMX", "desc": "Highly visual Mexican dance & music performance at Bellas Artes. July shows listed for the 12th, 19th, 26th — check current schedule.", "maps": "https://www.google.com/maps/search/?api=1&query=Ballet%20Folkl%C3%B3rico%20de%20M%C3%A9xico%20Bellas%20Artes"}, {"n": "Mercado Medellín", "lat": 19.409, "lon": -99.158, "typ": ["Market"], "exp": ["Food", "Shopping"], "food": ["Street food", "Regional"], "style": ["Colorful", "Local"], "vibe": ["Local", "Lively"], "time": ["Morning", "Lunch"], "light": "Good anytime", "price": "$", "rec": [], "grating": null, "greviews": null, "score": 9.0, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Casual meal", "Quick stop"], "effort": ["Low effort"], "conv": ["Walkable from Airbnb"], "safety": [], "hood": "Roma Sur, CDMX", "desc": "Multicultural Latin American market near the Airbnb — easy food-oriented exploration.", "maps": "https://www.google.com/maps/search/?api=1&query=Mercado%20Medell%C3%ADn%20CDMX"}, {"n": "Expendio de Maíz", "lat": 19.42, "lon": -99.16, "typ": ["Restaurant"], "exp": ["Food"], "food": ["Contemporary Mexican"], "style": ["Rustic", "Minimalist"], "vibe": ["Intimate", "Trendy"], "time": ["Dinner"], "light": "Good anytime", "price": "$$$", "rec": ["Michelin 1 Star"], "grating": null, "greviews": null, "score": 10.0, "src": ["Travel agent"], "fit": ["Good for all three", "Food-lover pick", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Special dinner"], "effort": ["Low effort"], "conv": ["Reservation required", "Short Uber"], "safety": [], "hood": "CDMX", "desc": "Informal, highly creative corn-centered meal with no conventional menu — most distinctive food experience.", "maps": "https://www.google.com/maps/search/?api=1&query=Expendio%20de%20Ma%C3%ADz%20restaurante%20CDMX"}, {"n": "Máximo Bistrot (Máximo)", "lat": 19.4173, "lon": -99.1594, "typ": ["Restaurant"], "exp": ["Food"], "food": ["Contemporary Mexican"], "style": ["Modern"], "vibe": ["Sophisticated", "Relaxed"], "time": ["Dinner"], "light": "Good anytime", "price": "$$$", "rec": ["Michelin 1 Star"], "grating": 4.1, "greviews": null, "score": 9.8, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Special dinner", "Date night"], "effort": ["Low effort"], "conv": ["Walkable from Airbnb", "Reservation required"], "safety": [], "hood": "Roma Norte, CDMX", "desc": "Polished seasonal cooking, close to your base. French-technique, Mexican-market-driven cooking from chef Eduardo \"Lalo\" García.", "maps": "https://www.google.com/maps/search/?api=1&query=M%C3%A1ximo%20Bistrot%20Roma%20Norte%20CDMX"}, {"n": "Masala y Maíz", "lat": 19.42, "lon": -99.16, "typ": ["Restaurant"], "exp": ["Food"], "food": ["Contemporary Mexican"], "style": ["Design-forward"], "vibe": ["Trendy"], "time": ["Dinner"], "light": "Good anytime", "price": "$$$", "rec": ["Michelin 1 Star"], "grating": null, "greviews": null, "score": 9.7, "src": ["Travel agent"], "fit": ["Good for all three", "Food-lover pick", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Special dinner"], "effort": ["Low effort"], "conv": ["Reservation required", "Short Uber"], "safety": [], "hood": "CDMX", "desc": "Creative intersection of Mexican, Indian and East African culinary traditions.", "maps": "https://www.google.com/maps/search/?api=1&query=Masala%20y%20Ma%C3%ADz%20restaurante%20CDMX"}, {"n": "Quintonil", "lat": 19.4326, "lon": -99.1962, "typ": ["Restaurant"], "exp": ["Food"], "food": ["Contemporary Mexican", "Fine dining"], "style": ["Modern", "Garden"], "vibe": ["Sophisticated"], "time": ["Dinner"], "light": "Good anytime", "price": "$$$$", "rec": ["Michelin 2 Stars"], "grating": 4.2, "greviews": null, "score": 9.5, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Special dinner"], "effort": ["Low effort"], "conv": ["Reservation required", "Short Uber"], "safety": [], "hood": "Polanco, CDMX", "desc": "Ambitious contemporary Mexican tasting menu — book the moment you have dates. Considered more emotionally satisfying than Pujol by some.", "maps": "https://www.google.com/maps/search/?api=1&query=Quintonil%20Polanco%20CDMX"}, {"n": "Gaba", "lat": 19.427, "lon": -99.165, "typ": ["Restaurant"], "exp": ["Food"], "food": ["Contemporary Mexican"], "style": ["Modern"], "vibe": ["Sophisticated"], "time": ["Dinner"], "light": "Good anytime", "price": "$$$", "rec": ["Michelin 1 Star"], "grating": null, "greviews": null, "score": 9.1, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Special dinner"], "effort": ["Low effort"], "conv": ["Reservation required", "Short Uber"], "safety": [], "hood": "Cuauhtémoc, CDMX", "desc": "Newer high-end Mexican cooking — good when older famous reservations are unavailable.", "maps": "https://www.google.com/maps/search/?api=1&query=Gaba%20restaurante%20Cuauht%C3%A9moc%20CDMX"}, {"n": "El Vilsito", "lat": 19.382, "lon": -99.166, "typ": ["Restaurant"], "exp": ["Food"], "food": ["Tacos", "Street food"], "style": ["Rustic"], "vibe": ["Local", "Lively"], "time": ["Late night", "Dinner"], "light": "Best at night", "price": "$", "rec": ["Bib Gourmand"], "grating": null, "greviews": null, "score": 9.7, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Late night", "Casual meal"], "effort": ["Low effort"], "conv": ["Short Uber", "Walk-in friendly"], "safety": [], "hood": "Del Valle, CDMX", "desc": "Auto-repair shop by day, extremely popular taquería at night.", "maps": "https://www.google.com/maps/search/?api=1&query=El%20Vilsito%20taquer%C3%ADa%20CDMX"}, {"n": "Taquería Los Cocuyos", "lat": 19.4326, "lon": -99.1332, "typ": ["Restaurant"], "exp": ["Food"], "food": ["Tacos", "Street food"], "style": ["Rustic", "Historic"], "vibe": ["Local", "Casual"], "time": ["Lunch", "Late night"], "light": "Good anytime", "price": "$", "rec": ["Bib Gourmand"], "grating": null, "greviews": null, "score": 9.5, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Quick stop", "Late night"], "effort": ["Low effort"], "conv": ["Metro-friendly", "Walk-in friendly"], "safety": [], "hood": "Centro Histórico, CDMX", "desc": "Old-school Centro taco counter known for slow-cooked meats — perfect after Templo Mayor or Bellas Artes.", "maps": "https://www.google.com/maps/search/?api=1&query=Taquer%C3%ADa%20Los%20Cocuyos%20Centro%20CDMX"}, {"n": "Tacos Hola El Güero", "lat": 19.4126, "lon": -99.171, "typ": ["Restaurant"], "exp": ["Food"], "food": ["Tacos", "Street food"], "style": ["Rustic"], "vibe": ["Local", "Casual"], "time": ["Lunch"], "light": "Good anytime", "price": "$", "rec": ["Michelin Selected"], "grating": null, "greviews": null, "score": 9.3, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Quick stop", "Casual meal"], "effort": ["Low effort"], "conv": ["Walkable from Airbnb", "Walk-in friendly"], "safety": [], "hood": "Condesa area, CDMX", "desc": "Classic guisado tacos — practical, better for lunch than a late formal meal.", "maps": "https://www.google.com/maps/search/?api=1&query=Tacos%20Hola%20El%20G%C3%BCero%20CDMX"}, {"n": "Plonk", "lat": 19.42, "lon": -99.16, "typ": ["Restaurant"], "exp": ["Food"], "food": ["Contemporary Mexican"], "style": ["Modern"], "vibe": ["Relaxed"], "time": ["Dinner"], "light": "Good anytime", "price": "$$$", "rec": ["Bib Gourmand"], "grating": null, "greviews": null, "score": 9.0, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Casual meal", "Group dinner"], "effort": ["Low effort"], "conv": ["Short Uber", "Walk-in friendly"], "safety": [], "hood": "CDMX", "desc": "Relaxed neighborhood restaurant, good for a flexible evening with genuinely thoughtful cooking.", "maps": "https://www.google.com/maps/search/?api=1&query=Plonk%20restaurante%20CDMX"}, {"n": "Botánico", "lat": 19.4126, "lon": -99.171, "typ": ["Restaurant"], "exp": ["Food"], "food": ["Contemporary Mexican", "Seafood"], "style": ["Garden", "Design-forward"], "vibe": ["Lively", "Sophisticated"], "time": ["Dinner"], "light": "Good anytime", "price": "$$$", "rec": ["Michelin Selected"], "grating": null, "greviews": null, "score": 8.8, "src": ["Travel agent"], "fit": ["Good for Julia", "Good for Livia"], "occ": ["Group dinner"], "effort": ["Low effort"], "conv": ["Walkable from Airbnb", "Reservation required"], "safety": ["Seafood-heavy", "Crustacean risk"], "hood": "Condesa, CDMX", "desc": "Lush garden-style Condesa restaurant, strong setting for a group dinner. NOTE: some dishes have crab/shrimp.", "maps": "https://www.google.com/maps/search/?api=1&query=Bot%C3%A1nico%20restaurante%20Condesa%20CDMX"}, {"n": "MeroToro", "lat": 19.4126, "lon": -99.171, "typ": ["Restaurant"], "exp": ["Food"], "food": ["Seafood", "Contemporary Mexican"], "style": ["Modern"], "vibe": ["Relaxed", "Sophisticated"], "time": ["Dinner"], "light": "Good anytime", "price": "$$$", "rec": ["Michelin Selected"], "grating": null, "greviews": null, "score": 8.9, "src": ["Travel agent"], "fit": ["Good for Julia", "Good for Livia"], "occ": ["Casual meal"], "effort": ["Low effort"], "conv": ["Walkable from Airbnb", "Reservation required"], "safety": ["Seafood-heavy"], "hood": "Condesa, CDMX", "desc": "Baja-influenced contemporary cooking — good neighborhood dinner without a tasting-menu commitment. Confirm allergy handling.", "maps": "https://www.google.com/maps/search/?api=1&query=MeroToro%20restaurante%20Condesa%20CDMX"}, {"n": "Lardo", "lat": 19.4126, "lon": -99.171, "typ": ["Restaurant"], "exp": ["Food"], "food": ["Mexican"], "style": ["Rustic", "Modern"], "vibe": ["Lively", "Casual"], "time": ["Breakfast", "Lunch", "Dinner"], "light": "Good anytime", "price": "$$", "rec": [], "grating": null, "greviews": null, "score": 8.8, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Casual meal", "First night"], "effort": ["Low effort"], "conv": ["Walkable from Airbnb", "Walk-in friendly"], "safety": [], "hood": "Condesa, CDMX", "desc": "Doesn't take reservations — genuine walk-in, best for an early lunch. Wood-fired, market-driven menu.", "maps": "https://www.google.com/maps/search/?api=1&query=Lardo%20restaurante%20Condesa%20CDMX"}, {"n": "Contramar", "lat": 19.4173, "lon": -99.1594, "typ": ["Restaurant"], "exp": ["Food"], "food": ["Seafood"], "style": ["Modern"], "vibe": ["Lively", "Trendy"], "time": ["Lunch"], "light": "Good anytime", "price": "$$$", "rec": ["Bib Gourmand"], "grating": 4.5, "greviews": 6500, "score": 8.2, "src": ["Travel agent"], "fit": ["Good for Julia", "Good for Livia"], "occ": ["Group dinner", "Casual meal"], "effort": ["Low effort"], "conv": ["Walkable from Airbnb", "Walk-in friendly"], "safety": ["Seafood-heavy", "Crustacean risk"], "hood": "Roma Norte, CDMX", "desc": "Iconic seafood lunch, lively design-conscious room. CAUTION: heavily seafood-oriented — confirm crustacean/salmon allergy handling. Genuinely accepts walk-ins.", "maps": "https://www.google.com/maps/search/?api=1&query=Contramar%20Roma%20Norte%20CDMX"}, {"n": "Saint", "lat": 19.4105, "lon": -99.175, "typ": ["Bakery"], "exp": ["Food"], "food": ["Pastries", "Coffee"], "style": ["Modern"], "vibe": ["Trendy"], "time": ["Breakfast", "Morning"], "light": "Good anytime", "price": "$$", "rec": ["Local institution"], "grating": null, "greviews": null, "score": 9.8, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Quick stop"], "effort": ["Low effort"], "conv": ["Walkable from Airbnb"], "safety": [], "hood": "Hipódromo, CDMX", "desc": "Excellent laminated pastries, bread & sandwiches — named top bakery in Condé Nast Traveler's 2026 CDMX selection.", "maps": "https://www.google.com/maps/search/?api=1&query=Saint%20panader%C3%ADa%20Hip%C3%B3dromo%20CDMX"}, {"n": "Buendía Pan y Café", "lat": 19.42, "lon": -99.16, "typ": ["Bakery", "Café"], "exp": ["Food"], "food": ["Pastries", "Coffee"], "style": ["Modern"], "vibe": ["Relaxed"], "time": ["Breakfast", "Morning"], "light": "Good anytime", "price": "$$", "rec": [], "grating": null, "greviews": null, "score": 9.3, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Quick stop"], "effort": ["Low effort"], "conv": ["Short Uber"], "safety": [], "hood": "CDMX", "desc": "Inventive versions of Mexican breads and pastries — sample several things.", "maps": "https://www.google.com/maps/search/?api=1&query=Buend%C3%ADa%20Pan%20y%20Caf%C3%A9%20CDMX"}, {"n": "Pastelería Ideal", "lat": 19.4326, "lon": -99.1332, "typ": ["Bakery"], "exp": ["Food", "Culture"], "food": ["Pastries"], "style": ["Historic", "Colorful"], "vibe": ["Touristy", "Local"], "time": ["Morning"], "light": "Good anytime", "price": "$", "rec": ["Local institution"], "grating": null, "greviews": null, "score": 9.2, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Quick stop"], "effort": ["Low effort"], "conv": ["Metro-friendly"], "safety": [], "hood": "Centro Histórico, CDMX", "desc": "Enormous traditional bakery, walk around with a tray choosing pastries — more cultural spectacle than refined café.", "maps": "https://www.google.com/maps/search/?api=1&query=Pasteler%C3%ADa%20Ideal%20Centro%20CDMX"}, {"n": "Odette", "lat": 19.42, "lon": -99.16, "typ": ["Bakery"], "exp": ["Food"], "food": ["Pastries"], "style": ["Minimalist", "Modern"], "vibe": ["Sophisticated"], "time": ["Breakfast", "Afternoon"], "light": "Good anytime", "price": "$$", "rec": [], "grating": null, "greviews": null, "score": 9.1, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Quick stop"], "effort": ["Low effort"], "conv": ["Short Uber"], "safety": [], "hood": "CDMX", "desc": "Precise French-style pastry, more polished feel — for elegant desserts rather than rustic bread.", "maps": "https://www.google.com/maps/search/?api=1&query=Odette%20pasteler%C3%ADa%20CDMX"}, {"n": "Costra", "lat": 19.42, "lon": -99.16, "typ": ["Bakery"], "exp": ["Food"], "food": ["Pastries"], "style": ["Modern"], "vibe": ["Trendy"], "time": ["Morning"], "light": "Good anytime", "price": "$$", "rec": [], "grating": null, "greviews": null, "score": 9.0, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Quick stop"], "effort": ["Low effort"], "conv": ["Short Uber"], "safety": [], "hood": "CDMX", "desc": "Modern bakery known for bold sweet breads and large cinnamon rolls.", "maps": "https://www.google.com/maps/search/?api=1&query=Costra%20panader%C3%ADa%20CDMX"}, {"n": "Café Nin", "lat": 19.415, "lon": -99.16, "typ": ["Café", "Restaurant"], "exp": ["Food"], "food": ["Brunch", "Coffee", "Pastries"], "style": ["Modern"], "vibe": ["Relaxed"], "time": ["Breakfast", "Morning"], "light": "Good anytime", "price": "$$", "rec": [], "grating": null, "greviews": null, "score": 9.1, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Casual meal"], "effort": ["Low effort"], "conv": ["Walkable from Airbnb"], "safety": [], "hood": "Roma/Juárez, CDMX", "desc": "Attractive breakfast and pastry spot, relaxed food-focused morning.", "maps": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20Nin%20Roma%20CDMX"}, {"n": "Meroma", "lat": 19.4173, "lon": -99.1594, "typ": ["Restaurant"], "exp": ["Food"], "food": ["Contemporary Mexican"], "style": ["Garden", "Design-forward"], "vibe": ["Sophisticated", "Lively"], "time": ["Dinner"], "light": "Good anytime", "price": "$$$", "rec": [], "grating": 4.7, "greviews": 1300, "score": 8.9, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Special dinner"], "effort": ["Low effort"], "conv": ["Short Uber", "Reservation required"], "safety": [], "hood": "Roma Norte, CDMX", "desc": "Contemporary Mexican with Italian/Mediterranean touches, plant-filled glass-roofed terrace.", "maps": "https://www.google.com/maps/search/?api=1&query=Meroma%20Roma%20Norte%20CDMX"}, {"n": "Huset", "lat": 19.4173, "lon": -99.1594, "typ": ["Restaurant"], "exp": ["Food"], "food": ["Mexican"], "style": ["Garden"], "vibe": ["Romantic", "Sophisticated"], "time": ["Dinner"], "light": "Good anytime", "price": "$$$", "rec": [], "grating": 4.6, "greviews": 3400, "score": 8.7, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Date night", "Special dinner"], "effort": ["Low effort"], "conv": ["Short Uber", "Reservation required"], "safety": [], "hood": "Roma Norte, CDMX", "desc": "Lush vine-draped garden setting, greenhouse feel; Mexican/international menu, praised cocktails.", "maps": "https://www.google.com/maps/search/?api=1&query=Huset%20Roma%20Norte%20CDMX"}, {"n": "La Docena Oyster Bar & Grill", "lat": 19.4173, "lon": -99.1594, "typ": ["Restaurant"], "exp": ["Food"], "food": ["Seafood"], "style": ["Modern"], "vibe": ["Lively"], "time": ["Dinner"], "light": "Good anytime", "price": "$$$", "rec": [], "grating": 4.4, "greviews": null, "score": 8.3, "src": ["Travel agent"], "fit": ["Good for Julia", "Good for Livia"], "occ": ["Group dinner"], "effort": ["Low effort"], "conv": ["Short Uber", "Reservation required"], "safety": ["Seafood-heavy", "Crustacean risk"], "hood": "Roma Norte, CDMX", "desc": "Oyster-forward seafood, mezcalita cocktails, upscale-casual — Latin America's 50 Best pick.", "maps": "https://www.google.com/maps/search/?api=1&query=La%20Docena%20Oyster%20Bar%20Grill%20Roma%20Norte"}, {"n": "Pargot", "lat": 19.418, "lon": -99.166, "typ": ["Restaurant"], "exp": ["Food"], "food": ["Contemporary Mexican"], "style": ["Art Deco", "Rustic"], "vibe": ["Intimate"], "time": ["Dinner"], "light": "Good anytime", "price": "$$$", "rec": ["Bib Gourmand"], "grating": 4.7, "greviews": null, "score": 8.9, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Casual meal", "Date night"], "effort": ["Low effort"], "conv": ["Walk-in friendly"], "safety": [], "hood": "Cuauhtémoc/Condesa border, CDMX", "desc": "Tiny 4-table Art Deco storefront, chef Alexis Ayala's tight seasonal menu. Walk-in is a gamble — go early/off-peak.", "maps": "https://www.google.com/maps/search/?api=1&query=Pargot%20restaurante%20CDMX"}, {"n": "Azul Condesa", "lat": 19.4126, "lon": -99.171, "typ": ["Restaurant"], "exp": ["Food"], "food": ["Mexican"], "style": ["Colonial", "Garden"], "vibe": ["Relaxed", "Sophisticated"], "time": ["Dinner"], "light": "Good anytime", "price": "$$$", "rec": [], "grating": null, "greviews": null, "score": 8.0, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Special dinner"], "effort": ["Low effort"], "conv": ["Short Uber"], "safety": [], "hood": "Condesa, CDMX", "desc": "Modern-hacienda atmosphere, classic Mexican dishes (chapulines on guacamole, mole negro enchiladas).", "maps": "https://www.google.com/maps/search/?api=1&query=Azul%20Condesa%20restaurante%20CDMX"}, {"n": "Toletoche", "lat": 19.414, "lon": -99.165, "typ": ["Restaurant"], "exp": ["Food"], "food": ["Contemporary Mexican"], "style": ["Modern"], "vibe": ["Trendy"], "time": ["Dinner"], "light": "Good anytime", "price": "$$", "rec": [], "grating": null, "greviews": null, "score": 6.5, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Casual meal"], "effort": ["Low effort"], "conv": [], "safety": [], "hood": "Roma/Condesa, CDMX", "desc": "Comes up repeatedly in Roma/Condesa recs for creative small plates — ratings unverified, check before going.", "maps": "https://www.google.com/maps/search/?api=1&query=Toletoche%20restaurante%20Roma%20CDMX"}, {"n": "Blanco Nieve", "lat": 19.414, "lon": -99.165, "typ": ["Restaurant"], "exp": ["Food"], "food": ["Contemporary Mexican"], "style": ["Modern"], "vibe": ["Trendy"], "time": ["Dinner"], "light": "Good anytime", "price": "$$", "rec": [], "grating": null, "greviews": null, "score": 6.5, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Casual meal"], "effort": ["Low effort"], "conv": [], "safety": [], "hood": "Roma/Condesa, CDMX", "desc": "Comes up repeatedly in Roma/Condesa recs for creative small plates — ratings unverified, check before going.", "maps": "https://www.google.com/maps/search/?api=1&query=Blanco%20Nieve%20restaurante%20Roma%20CDMX"}, {"n": "Baltra Bar", "lat": 19.4126, "lon": -99.171, "typ": ["Bar"], "exp": ["Nightlife"], "food": ["Cocktails"], "style": ["Modern"], "vibe": ["Social", "Lively"], "time": ["Late night", "Dinner"], "light": "Best at night", "price": "$$$", "rec": [], "grating": 4.5, "greviews": 1500, "score": 8.5, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Date night", "Group dinner"], "effort": ["Low effort"], "conv": ["Walkable from Airbnb"], "safety": [], "hood": "Condesa, CDMX", "desc": "Most 'neighborhood' of the serious cocktail bars — good outdoor seating, excellent martinis.", "maps": "https://www.google.com/maps/search/?api=1&query=Baltra%20Bar%20Condesa%20CDMX"}, {"n": "La Clandestina", "lat": 19.4126, "lon": -99.171, "typ": ["Bar"], "exp": ["Nightlife"], "food": ["Mezcal"], "style": ["Rustic", "Minimalist"], "vibe": ["Intimate", "Local"], "time": ["Late night"], "light": "Best at night", "price": "$$", "rec": [], "grating": null, "greviews": null, "score": 8.2, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Casual meal"], "effort": ["Low effort"], "conv": ["Walk-in friendly", "Walkable from Airbnb"], "safety": [], "hood": "Condesa, CDMX", "desc": "Semi-underground mezcalería, walk-in only. Staff walk you through regions/production — educational, intimate.", "maps": "https://www.google.com/maps/search/?api=1&query=La%20Clandestina%20mezcaler%C3%ADa%20Condesa%20CDMX"}, {"n": "Rubí Wine & Cocktails", "lat": 19.4126, "lon": -99.171, "typ": ["Bar"], "exp": ["Nightlife"], "food": ["Wine", "Cocktails"], "style": ["Rooftop", "Modern"], "vibe": ["Trendy", "Social"], "time": ["Afternoon", "Golden hour"], "light": "Better at sunset", "price": "$$$", "rec": [], "grating": null, "greviews": null, "score": 8.0, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Date night"], "effort": ["Low effort"], "conv": ["Walkable from Airbnb"], "safety": [], "hood": "Condesa, CDMX", "desc": "Opened late 2024, overlooks Parque México directly. Good for afternoon spritz or evening cocktail.", "maps": "https://www.google.com/maps/search/?api=1&query=Rub%C3%AD%20Wine%20Cocktails%20Condesa%20CDMX"}, {"n": "Condesa DF Rooftop", "lat": 19.4126, "lon": -99.171, "typ": ["Bar", "Restaurant"], "exp": ["Nightlife"], "food": ["Cocktails", "Mezcal"], "style": ["Rooftop", "Design-forward"], "vibe": ["Trendy", "Sophisticated"], "time": ["Golden hour", "Dinner"], "light": "Better at sunset", "price": "$$$$", "rec": [], "grating": null, "greviews": null, "score": 8.4, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Date night", "Special dinner"], "effort": ["Low effort"], "conv": ["Walkable from Airbnb", "Reservation required"], "safety": [], "hood": "Condesa, CDMX", "desc": "India Mahdavi-designed rooftop under a jacaranda canopy, Japanese-Mexican fusion food, mezcal cocktails.", "maps": "https://www.google.com/maps/search/?api=1&query=Condesa%20DF%20Rooftop%20CDMX"}, {"n": "Em", "lat": 19.415, "lon": -99.16, "typ": ["Restaurant"], "exp": ["Food"], "food": ["Contemporary Mexican"], "style": ["Modern"], "vibe": ["Sophisticated", "Intimate"], "time": ["Dinner"], "light": "Good anytime", "price": "$$$$", "rec": ["Michelin 1 Star"], "grating": null, "greviews": null, "score": 8.8, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Special dinner"], "effort": ["Low effort"], "conv": ["Reservation required", "Short Uber"], "safety": [], "hood": "Roma, CDMX", "desc": "Mexican cuisine with Japanese technique. Reservation-based.", "maps": "https://www.google.com/maps/search/?api=1&query=Em%20restaurante%20Roma%20CDMX"}, {"n": "Ultramarinos Demar", "lat": 19.415, "lon": -99.16, "typ": ["Restaurant"], "exp": ["Food"], "food": ["Mexican", "Seafood"], "style": ["Modern"], "vibe": ["Casual"], "time": ["Lunch", "Dinner"], "light": "Good anytime", "price": "$$", "rec": ["Bib Gourmand"], "grating": null, "greviews": null, "score": 8.0, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Casual meal"], "effort": ["Low effort"], "conv": ["Short Uber"], "safety": [], "hood": "Roma, CDMX", "desc": "Sister restaurant of Em, easier-access alternative from the same chef.", "maps": "https://www.google.com/maps/search/?api=1&query=Ultramarinos%20Demar%20Roma%20CDMX"}, {"n": "Martínez", "lat": 19.415, "lon": -99.16, "typ": ["Restaurant", "Bar"], "exp": ["Food"], "food": ["Mexican"], "style": ["Modern"], "vibe": ["Trendy", "Social"], "time": ["Dinner"], "light": "Good anytime", "price": "$$$", "rec": [], "grating": null, "greviews": null, "score": 7.8, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Casual meal", "Group dinner"], "effort": ["Low effort"], "conv": ["Short Uber"], "safety": [], "hood": "Roma, CDMX", "desc": "Stylish bistro, sister restaurant of Em.", "maps": "https://www.google.com/maps/search/?api=1&query=Mart%C3%ADnez%20bistro%20Roma%20CDMX"}, {"n": "Falling Piano Brewing Co.", "lat": 19.4173, "lon": -99.1594, "typ": ["Bar"], "exp": ["Nightlife"], "food": ["Cocktails"], "style": ["Rustic"], "vibe": ["Casual", "Lively"], "time": ["Late night", "Dinner"], "light": "Good anytime", "price": "$$", "rec": [], "grating": null, "greviews": null, "score": 7.7, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Casual meal", "Group dinner"], "effort": ["Low effort"], "conv": ["Walk-in friendly", "Short Uber"], "safety": [], "hood": "Roma Norte, CDMX", "desc": "Industrial-chic brewery, piano suspended over the brew tanks. Casual walk-in, good beer & bar food.", "maps": "https://www.google.com/maps/search/?api=1&query=Falling%20Piano%20Brewing%20Co%20CDMX"}, {"n": "La 89", "lat": 19.4173, "lon": -99.1594, "typ": ["Restaurant"], "exp": ["Food"], "food": ["Tacos", "Street food"], "style": ["Modern"], "vibe": ["Casual"], "time": ["Lunch"], "light": "Good anytime", "price": "$", "rec": ["Bib Gourmand"], "grating": null, "greviews": null, "score": 8.2, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Quick stop", "Casual meal"], "effort": ["Low effort"], "conv": ["Walk-in friendly", "Short Uber"], "safety": [], "hood": "Roma Norte, CDMX", "desc": "Bright, casual taco/torta counter, genuinely walk-in friendly.", "maps": "https://www.google.com/maps/search/?api=1&query=La%2089%20Roma%20Norte%20tacos%20CDMX"}, {"n": "Fonda Fina", "lat": 19.4173, "lon": -99.1594, "typ": ["Restaurant"], "exp": ["Food"], "food": ["Contemporary Mexican", "Regional"], "style": ["Rustic"], "vibe": ["Casual"], "time": ["Lunch", "Dinner"], "light": "Good anytime", "price": "$$", "rec": ["Michelin Selected"], "grating": null, "greviews": null, "score": 8.3, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Casual meal"], "effort": ["Low effort"], "conv": ["Walk-in friendly", "Short Uber"], "safety": [], "hood": "Roma Norte, CDMX", "desc": "Casual fonda-style cooking from a Quintonil-trained chef. Walk-ins fine outside peak lunch.", "maps": "https://www.google.com/maps/search/?api=1&query=Fonda%20Fina%20Roma%20Norte%20CDMX"}, {"n": "Licorería Limantour", "lat": 19.415, "lon": -99.16, "typ": ["Bar"], "exp": ["Nightlife"], "food": ["Cocktails"], "style": ["Modern"], "vibe": ["Social", "Lively"], "time": ["Late night"], "light": "Best at night", "price": "$$$", "rec": ["World's 50 Best"], "grating": 4.4, "greviews": 3600, "score": 8.7, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Group dinner"], "effort": ["Low effort"], "conv": ["Short Uber", "Walk-in friendly"], "safety": [], "hood": "Roma, CDMX", "desc": "#32 World's Best Bars. Indoor bar plus outdoor seating — one of the more reliable walk-in options among top-ranked bars.", "maps": "https://www.google.com/maps/search/?api=1&query=Licorer%C3%ADa%20Limantour%20Roma%20CDMX"}, {"n": "Tlécan", "lat": 19.42, "lon": -99.16, "typ": ["Bar"], "exp": ["Nightlife"], "food": ["Mezcal"], "style": ["Design-forward"], "vibe": ["Sophisticated", "Intimate"], "time": ["Late night"], "light": "Best at night", "price": "$$$$", "rec": ["World's 50 Best"], "grating": null, "greviews": null, "score": 9.2, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Date night"], "effort": ["Low effort"], "conv": ["Reservation required", "Short Uber"], "safety": [], "hood": "CDMX", "desc": "#20 World's 50 Best Bars. Cave-like pre-Hispanic-inspired design, mezcal/rare agave spirits. Best design-forward mezcal experience in the city.", "maps": "https://www.google.com/maps/search/?api=1&query=Tl%C3%A9can%20bar%20CDMX"}, {"n": "El Califa de León", "lat": 19.441, "lon": -99.162, "typ": ["Restaurant"], "exp": ["Food"], "food": ["Tacos", "Street food"], "style": ["Rustic"], "vibe": ["Local", "Touristy"], "time": ["Late night", "Dinner"], "light": "Best at night", "price": "$", "rec": ["Michelin 1 Star"], "grating": null, "greviews": null, "score": 9.0, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Late night"], "effort": ["Moderate effort"], "conv": ["Walk-in friendly", "Long queue"], "safety": [], "hood": "San Rafael, CDMX", "desc": "World's first Michelin-starred taco stand: one star, zero seats, $3-5 tacos standing, cash only. Go for the novelty and the tacos, not atmosphere.", "maps": "https://www.google.com/maps/search/?api=1&query=El%20Califa%20de%20Le%C3%B3n%20taquer%C3%ADa%20San%20Rafael%20CDMX"}, {"n": "Tacos de Canasta Los Especiales", "lat": 19.4326, "lon": -99.1332, "typ": ["Restaurant"], "exp": ["Food"], "food": ["Tacos", "Street food"], "style": ["Rustic"], "vibe": ["Local"], "time": ["Lunch"], "light": "Good anytime", "price": "$", "rec": ["Michelin Selected"], "grating": null, "greviews": null, "score": 8.5, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Quick stop"], "effort": ["Low effort"], "conv": ["Walk-in friendly", "Metro-friendly"], "safety": [], "hood": "Centro Histórico, CDMX", "desc": "Michelin-recommended classic stand-and-eat taquería with a loyal local following.", "maps": "https://www.google.com/maps/search/?api=1&query=Tacos%20de%20Canasta%20Los%20Especiales%20Centro%20CDMX"}, {"n": "Pujol", "lat": 19.4326, "lon": -99.1962, "typ": ["Restaurant"], "exp": ["Food"], "food": ["Contemporary Mexican", "Fine dining"], "style": ["Modern", "Minimalist"], "vibe": ["Sophisticated"], "time": ["Lunch", "Dinner"], "light": "Good anytime", "price": "$$$$", "rec": ["Michelin 2 Stars"], "grating": 4.2, "greviews": null, "score": 9.0, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Special dinner"], "effort": ["Low effort"], "conv": ["Reservation required", "Short Uber"], "safety": [], "hood": "Polanco, CDMX", "desc": "Pioneer of modern Mexican fine dining. Reviews more mixed than the hype. Best same-day shot: counter/omakase seatings or the walk-in terrace.", "maps": "https://www.google.com/maps/search/?api=1&query=Pujol%20restaurante%20Polanco%20CDMX"}, {"n": "El Mayor", "lat": 19.4326, "lon": -99.1332, "typ": ["Restaurant"], "exp": ["Food", "Architecture"], "food": ["Contemporary Mexican"], "style": ["Scenic", "Rooftop"], "vibe": ["Sophisticated"], "time": ["Lunch", "Golden hour"], "light": "Better at sunset", "price": "$$$", "rec": [], "grating": null, "greviews": null, "score": 8.5, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Special dinner"], "effort": ["Low effort"], "conv": ["Reservation required", "Metro-friendly"], "safety": [], "hood": "Centro Histórico, CDMX", "desc": "Contemporary Mexican on a terrace overlooking the Templo Mayor ruins and the Metropolitan Cathedral.", "maps": "https://www.google.com/maps/search/?api=1&query=El%20Mayor%20restaurante%20Centro%20Hist%C3%B3rico%20CDMX"}, {"n": "Cityzen (Sofitel Reforma)", "lat": 19.427, "lon": -99.167, "typ": ["Bar", "Viewpoint"], "exp": ["Nightlife"], "food": ["Mezcal", "Cocktails"], "style": ["Rooftop", "Modern"], "vibe": ["Sophisticated"], "time": ["Golden hour", "Late night"], "light": "Better at sunset", "price": "$$$$", "rec": [], "grating": null, "greviews": null, "score": 8.0, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Date night"], "effort": ["Low effort"], "conv": ["Metro-friendly"], "safety": [], "hood": "Reforma, CDMX", "desc": "38th floor, 180° views of Chapultepec Castle. Well-regarded mezcal/tequila program.", "maps": "https://www.google.com/maps/search/?api=1&query=Cityzen%20Sofitel%20Mexico%20City%20Reforma"}, {"n": "Balmori Roofbar", "lat": 19.4173, "lon": -99.1594, "typ": ["Bar"], "exp": ["Nightlife"], "food": ["Cocktails"], "style": ["Rooftop"], "vibe": ["Trendy"], "time": ["Golden hour", "Late night"], "light": "Better at sunset", "price": "$$$", "rec": [], "grating": null, "greviews": null, "score": 7.8, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Group dinner"], "effort": ["Low effort"], "conv": ["Short Uber"], "safety": [], "hood": "Centro/Roma Norte, CDMX", "desc": "Pink-couch glamour rooftop.", "maps": "https://www.google.com/maps/search/?api=1&query=Balmori%20Roofbar%20CDMX"}, {"n": "Terraza Cha Cha Chá", "lat": 19.42, "lon": -99.16, "typ": ["Bar"], "exp": ["Nightlife"], "food": ["Cocktails"], "style": ["Rooftop"], "vibe": ["Lively"], "time": ["Golden hour", "Late night"], "light": "Better at sunset", "price": "$$$", "rec": [], "grating": null, "greviews": null, "score": 7.8, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Group dinner"], "effort": ["Low effort"], "conv": ["Short Uber"], "safety": [], "hood": "CDMX", "desc": "Rooftop with Monumento a la Revolución views.", "maps": "https://www.google.com/maps/search/?api=1&query=Terraza%20Cha%20Cha%20Ch%C3%A1%20CDMX"}, {"n": "Supra Roma", "lat": 19.415, "lon": -99.16, "typ": ["Bar"], "exp": ["Nightlife"], "food": ["Cocktails"], "style": ["Rooftop", "Design-forward"], "vibe": ["Trendy"], "time": ["Golden hour", "Late night"], "light": "Better at sunset", "price": "$$$", "rec": [], "grating": null, "greviews": null, "score": 7.8, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Date night"], "effort": ["Low effort"], "conv": ["Short Uber"], "safety": [], "hood": "Roma, CDMX", "desc": "360° art-driven rooftop design.", "maps": "https://www.google.com/maps/search/?api=1&query=Supra%20Roma%20rooftop%20CDMX"}, {"n": "Handshake Speakeasy", "lat": 19.427, "lon": -99.159, "typ": ["Bar"], "exp": ["Nightlife"], "food": ["Cocktails"], "style": ["Design-forward", "Minimalist"], "vibe": ["Intimate", "Sophisticated"], "time": ["Late night"], "light": "Best at night", "price": "$$$$", "rec": ["World's 50 Best"], "grating": null, "greviews": null, "score": 9.4, "src": ["Travel agent"], "fit": ["Good for all three", "Good for Eric", "Good for Julia", "Good for Livia"], "occ": ["Date night"], "effort": ["Low effort"], "conv": ["Reservation required"], "safety": [], "hood": "Juárez, CDMX", "desc": "Currently #3 World's 50 Best Bars, genuinely excellent, hidden entrance. Strict reservation-only.", "maps": "https://www.google.com/maps/search/?api=1&query=Handshake%20Speakeasy%20Ju%C3%A1rez%20CDMX"}]};
+const DATA = {
+  "airbnb": [
+    19.407,
+    -99.173
+  ],
+  "places": [
+    {
+      "n": "Cardinal Casa de Café",
+      "lat": 19.4173129,
+      "lon": -99.1581324,
+      "typ": [
+        "Café"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Coffee",
+        "Brunch"
+      ],
+      "style": [
+        "Modern"
+      ],
+      "vibe": [
+        "Relaxed",
+        "Trendy"
+      ],
+      "time": [
+        "Morning",
+        "Breakfast",
+        "Afternoon"
+      ],
+      "light": "Good anytime",
+      "noise": "Quiet",
+      "price": "$$",
+      "rec": [],
+      "grating": 4.5,
+      "greviews": 1495,
+      "score": 8.0,
+      "src": [
+        "Google Maps"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Quick stop",
+        "Casual meal"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Walkable from Airbnb",
+        "Walk-in friendly"
+      ],
+      "safety": [],
+      "hood": "Roma Norte, CDMX",
+      "desc": "Popular Roma Norte specialty coffee & brunch spot.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Cardinal%20Casa%20de%20Caf%C3%A9%20Roma%20Norte%20CDMX"
+    },
+    {
+      "n": "Cafeología",
+      "lat": 19.3557177,
+      "lon": -99.1637132,
+      "typ": [
+        "Café"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Coffee"
+      ],
+      "style": [
+        "Modern"
+      ],
+      "vibe": [
+        "Relaxed",
+        "Local"
+      ],
+      "time": [
+        "Morning",
+        "Afternoon"
+      ],
+      "light": "Good anytime",
+      "noise": "Quiet",
+      "price": "$$",
+      "rec": [],
+      "grating": 4.3,
+      "greviews": 109,
+      "score": 7.0,
+      "src": [
+        "Google Maps"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Quick stop"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Short Uber"
+      ],
+      "safety": [],
+      "hood": "South CDMX",
+      "desc": "Neighborhood specialty coffee shop.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Cafeolog%C3%ADa%20CDMX"
+    },
+    {
+      "n": "Mutante tostadores de café",
+      "lat": 19.5475002,
+      "lon": -99.2206751,
+      "typ": [
+        "Café"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Coffee"
+      ],
+      "style": [
+        "Rustic"
+      ],
+      "vibe": [
+        "Local"
+      ],
+      "time": [
+        "Morning"
+      ],
+      "light": "Good anytime",
+      "noise": "Quiet",
+      "price": "$",
+      "rec": [],
+      "grating": 4.9,
+      "greviews": 99,
+      "score": 7.5,
+      "src": [
+        "Google Maps"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Quick stop"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Short Uber"
+      ],
+      "safety": [],
+      "hood": "Tlalnepantla, Greater CDMX",
+      "desc": "Small-batch coffee roaster, highly rated but a bit out of the way.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Mutante%20tostadores%20de%20caf%C3%A9%20CDMX"
+    },
+    {
+      "n": "Pólvora Café",
+      "lat": 19.3392049,
+      "lon": -99.1308841,
+      "typ": [
+        "Café"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Coffee"
+      ],
+      "style": [
+        "Modern"
+      ],
+      "vibe": [
+        "Relaxed"
+      ],
+      "time": [
+        "Morning",
+        "Afternoon"
+      ],
+      "light": "Good anytime",
+      "noise": "Quiet",
+      "price": "$$$",
+      "rec": [],
+      "grating": 4.9,
+      "greviews": 110,
+      "score": 7.5,
+      "src": [
+        "Google Maps"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Quick stop"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Short Uber"
+      ],
+      "safety": [],
+      "hood": "Southeast CDMX",
+      "desc": "Highly-rated coffee shop / roaster.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=P%C3%B3lvora%20Caf%C3%A9%20CDMX"
+    },
+    {
+      "n": "Qũentin Café - Juárez",
+      "lat": 19.4279563,
+      "lon": -99.1560973,
+      "typ": [
+        "Café"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Coffee"
+      ],
+      "style": [
+        "Modern"
+      ],
+      "vibe": [
+        "Trendy"
+      ],
+      "time": [
+        "Morning",
+        "Afternoon"
+      ],
+      "light": "Good anytime",
+      "noise": "Quiet",
+      "price": "$$$",
+      "rec": [],
+      "grating": 4.2,
+      "greviews": 358,
+      "score": 7.7,
+      "src": [
+        "Google Maps",
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Quick stop"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Walkable from Airbnb",
+        "Short Uber"
+      ],
+      "safety": [],
+      "hood": "Juárez, CDMX",
+      "desc": "Practical daily-coffee pick with Roma/Condesa/Juárez locations.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Q%C5%A9entin%20Caf%C3%A9%20Ju%C3%A1rez%20CDMX"
+    },
+    {
+      "n": "Alquimia Café",
+      "lat": 19.3890237,
+      "lon": -99.1553073,
+      "typ": [
+        "Café"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Coffee"
+      ],
+      "style": [
+        "Modern"
+      ],
+      "vibe": [
+        "Relaxed"
+      ],
+      "time": [
+        "Morning",
+        "Afternoon"
+      ],
+      "light": "Good anytime",
+      "noise": "Quiet",
+      "price": "$$",
+      "rec": [],
+      "grating": 4.3,
+      "greviews": 162,
+      "score": 7.0,
+      "src": [
+        "Google Maps"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Quick stop"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Short Uber"
+      ],
+      "safety": [],
+      "hood": "CDMX",
+      "desc": "Specialty coffee shop.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Alquimia%20Caf%C3%A9%20CDMX"
+    },
+    {
+      "n": "Yonke",
+      "lat": 19.4382916,
+      "lon": -99.1557014,
+      "typ": [
+        "Café"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Coffee"
+      ],
+      "style": [
+        "Rustic",
+        "Colorful"
+      ],
+      "vibe": [
+        "Local",
+        "Casual"
+      ],
+      "time": [
+        "Morning"
+      ],
+      "light": "Good anytime",
+      "noise": "Quiet",
+      "price": "$",
+      "rec": [],
+      "grating": 4.6,
+      "greviews": 169,
+      "score": 7.5,
+      "src": [
+        "Google Maps"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Quick stop"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Walkable from Airbnb"
+      ],
+      "safety": [],
+      "hood": "Juárez, CDMX",
+      "desc": "Casual neighborhood coffee spot.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Yonke%20cafe%20CDMX"
+    },
+    {
+      "n": "Café Avellaneda",
+      "lat": 19.3483028,
+      "lon": -99.1607341,
+      "typ": [
+        "Café"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Coffee"
+      ],
+      "style": [
+        "Modern"
+      ],
+      "vibe": [
+        "Local",
+        "Lively"
+      ],
+      "time": [
+        "Morning",
+        "Afternoon"
+      ],
+      "light": "Good anytime",
+      "noise": "Moderate",
+      "price": "$$",
+      "rec": [],
+      "grating": 4.6,
+      "greviews": 3659,
+      "score": 8.2,
+      "src": [
+        "Google Maps"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Quick stop",
+        "Casual meal"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Short Uber"
+      ],
+      "safety": [],
+      "hood": "South CDMX",
+      "desc": "Very well reviewed neighborhood coffee shop (3,600+ reviews).",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20Avellaneda%20CDMX"
+    },
+    {
+      "n": "Forte",
+      "lat": 19.414804,
+      "lon": -99.159958,
+      "typ": [
+        "Café",
+        "Restaurant"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Coffee",
+        "Brunch"
+      ],
+      "style": [
+        "Modern"
+      ],
+      "vibe": [
+        "Trendy"
+      ],
+      "time": [
+        "Morning",
+        "Breakfast",
+        "Lunch"
+      ],
+      "light": "Good anytime",
+      "noise": "Moderate",
+      "price": "$$$",
+      "rec": [],
+      "grating": 4.3,
+      "greviews": 829,
+      "score": 7.8,
+      "src": [
+        "Google Maps"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Casual meal"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Walkable from Airbnb"
+      ],
+      "safety": [],
+      "hood": "Roma Norte, CDMX",
+      "desc": "Coffee + brunch spot, Roma Norte.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Forte%20cafe%20Roma%20Norte%20CDMX"
+    },
+    {
+      "n": "Fonico",
+      "lat": 19.393,
+      "lon": -99.166,
+      "typ": [
+        "Bar"
+      ],
+      "exp": [
+        "Nightlife"
+      ],
+      "food": [
+        "Cocktails"
+      ],
+      "style": [
+        "Modern",
+        "Rooftop",
+        "Has a view"
+      ],
+      "vibe": [
+        "Lively",
+        "Sophisticated",
+        "Social"
+      ],
+      "time": [
+        "Dinner",
+        "Late night"
+      ],
+      "light": "Best at night",
+      "noise": "Loud",
+      "price": "$$$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 9.0,
+      "src": [
+        "Personal visit"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Date night",
+        "Group dinner"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Short Uber"
+      ],
+      "safety": [],
+      "hood": "Nápoles, CDMX",
+      "desc": "Eric's own pick — full classic cocktail bar downstairs plus a lounge-y rooftop upstairs. Very nice at night.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Fonico%20bar%20CDMX"
+    },
+    {
+      "n": "Almanegra Café",
+      "lat": 19.414,
+      "lon": -99.165,
+      "typ": [
+        "Café"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Coffee"
+      ],
+      "style": [
+        "Minimalist"
+      ],
+      "vibe": [
+        "Relaxed",
+        "Local"
+      ],
+      "time": [
+        "Morning"
+      ],
+      "light": "Good anytime",
+      "noise": "Quiet",
+      "price": "$",
+      "rec": [],
+      "grating": 4.4,
+      "greviews": 941,
+      "score": 7.5,
+      "src": [
+        "Google Maps"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Quick stop"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Walkable from Airbnb",
+        "Walk-in friendly"
+      ],
+      "safety": [],
+      "hood": "Roma/Condesa, CDMX",
+      "desc": "Original saved coffee shop pick, Roma/Condesa area.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Almanegra%20Caf%C3%A9%20CDMX"
+    },
+    {
+      "n": "Panadería Rosetta",
+      "lat": 19.4173,
+      "lon": -99.1594,
+      "typ": [
+        "Bakery"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Pastries",
+        "Coffee"
+      ],
+      "style": [
+        "Historic"
+      ],
+      "vibe": [
+        "Touristy",
+        "Local"
+      ],
+      "time": [
+        "Breakfast",
+        "Morning"
+      ],
+      "light": "Good anytime",
+      "noise": "Quiet",
+      "price": "$$",
+      "rec": [
+        "Local institution"
+      ],
+      "grating": null,
+      "greviews": null,
+      "score": 9.7,
+      "src": [
+        "Notion",
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Quick stop",
+        "Casual meal"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Walkable from Airbnb",
+        "Long queue"
+      ],
+      "safety": [],
+      "hood": "Roma Norte, CDMX",
+      "desc": "Famous guava-and-cheese roll & cardamom bun. Expect a line at the original location. Near your Roma Norte stay.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Panader%C3%ADa%20Rosetta%20Roma%20Norte%20CDMX"
+    },
+    {
+      "n": "Café El Jarocho",
+      "lat": 19.3467,
+      "lon": -99.1618,
+      "typ": [
+        "Café"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Coffee"
+      ],
+      "style": [
+        "Local",
+        "Colorful"
+      ],
+      "vibe": [
+        "Local",
+        "Touristy"
+      ],
+      "time": [
+        "Morning",
+        "Afternoon"
+      ],
+      "light": "Good anytime",
+      "noise": "Quiet",
+      "price": "$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 7.5,
+      "src": [
+        "Notion"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Quick stop"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Walk-in friendly"
+      ],
+      "safety": [],
+      "hood": "Coyoacán, CDMX",
+      "desc": "Classic Coyoacán coffee stand, near the Frida Kahlo museum.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20El%20Jarocho%20Coyoac%C3%A1n%20CDMX"
+    },
+    {
+      "n": "La Calaca",
+      "lat": 19.3467,
+      "lon": -99.1618,
+      "typ": [
+        "Restaurant"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Mexican",
+        "Regional"
+      ],
+      "style": [
+        "Colorful",
+        "Rustic"
+      ],
+      "vibe": [
+        "Local",
+        "Casual"
+      ],
+      "time": [
+        "Lunch",
+        "Dinner"
+      ],
+      "light": "Good anytime",
+      "noise": "Loud",
+      "price": "$$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 8.0,
+      "src": [
+        "Notion",
+        "Friend"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Casual meal"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Short Uber"
+      ],
+      "safety": [],
+      "hood": "Coyoacán, CDMX",
+      "desc": "\"Cheaper and gorgeous\" — Mariana's tip.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=La%20Calaca%20restaurante%20Coyoac%C3%A1n%20CDMX"
+    },
+    {
+      "n": "Los Danzantes",
+      "lat": 19.3467,
+      "lon": -99.1618,
+      "typ": [
+        "Restaurant"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Mexican",
+        "Regional",
+        "Mezcal"
+      ],
+      "style": [
+        "Colonial",
+        "Courtyard"
+      ],
+      "vibe": [
+        "Sophisticated"
+      ],
+      "time": [
+        "Lunch",
+        "Dinner"
+      ],
+      "light": "Good anytime",
+      "noise": "Quiet",
+      "price": "$$$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 8.3,
+      "src": [
+        "Notion",
+        "Friend"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Special dinner"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Short Uber",
+        "Reservation required"
+      ],
+      "safety": [],
+      "hood": "Coyoacán, CDMX",
+      "desc": "\"Pricier, but good\" — Mariana's tip. Oaxacan-rooted menu, historic Coyoacán courtyard house.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Los%20Danzantes%20Coyoac%C3%A1n%20CDMX"
+    },
+    {
+      "n": "Corazón de Maguey",
+      "lat": 19.3467,
+      "lon": -99.1618,
+      "typ": [
+        "Restaurant",
+        "Bar"
+      ],
+      "exp": [
+        "Food",
+        "Nightlife"
+      ],
+      "food": [
+        "Mexican",
+        "Mezcal"
+      ],
+      "style": [
+        "Colonial",
+        "Rooftop"
+      ],
+      "vibe": [
+        "Lively",
+        "Social"
+      ],
+      "time": [
+        "Dinner",
+        "Late night"
+      ],
+      "light": "Good anytime",
+      "noise": "Moderate",
+      "price": "$$$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 7.8,
+      "src": [
+        "Notion"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Group dinner"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Short Uber"
+      ],
+      "safety": [],
+      "hood": "Coyoacán, CDMX",
+      "desc": "Coyoacán mezcal restaurant/bar with a rooftop terrace.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Coraz%C3%B3n%20de%20Maguey%20Coyoac%C3%A1n%20CDMX"
+    },
+    {
+      "n": "Mercado de San Cosme",
+      "lat": 19.446,
+      "lon": -99.158,
+      "typ": [
+        "Market"
+      ],
+      "exp": [
+        "Food",
+        "Culture"
+      ],
+      "food": [
+        "Street food",
+        "Mexican"
+      ],
+      "style": [
+        "Local"
+      ],
+      "vibe": [
+        "Local",
+        "Casual"
+      ],
+      "time": [
+        "Morning",
+        "Lunch"
+      ],
+      "light": "Good anytime",
+      "noise": "Loud",
+      "price": "$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 7.0,
+      "src": [
+        "Notion"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Quick stop"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Metro-friendly"
+      ],
+      "safety": [],
+      "hood": "San Cosme, CDMX",
+      "desc": "Traditional neighborhood market.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Mercado%20de%20San%20Cosme%20CDMX"
+    },
+    {
+      "n": "Maizajo",
+      "lat": 19.415,
+      "lon": -99.16,
+      "typ": [
+        "Restaurant"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Tacos",
+        "Mexican"
+      ],
+      "style": [
+        "Rustic"
+      ],
+      "vibe": [
+        "Casual",
+        "Trendy"
+      ],
+      "time": [
+        "Lunch",
+        "Dinner"
+      ],
+      "light": "Good anytime",
+      "noise": "Moderate",
+      "price": "$$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 8.2,
+      "src": [
+        "Notion",
+        "Friend"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Casual meal"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Walkable from Airbnb"
+      ],
+      "safety": [],
+      "hood": "Roma, CDMX",
+      "desc": "Traditional taquería downstairs, chic gourmet menu upstairs — Mariana's tip.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Maizajo%20Roma%20CDMX"
+    },
+    {
+      "n": "Cariñito Tacos",
+      "lat": 19.42,
+      "lon": -99.16,
+      "typ": [
+        "Restaurant"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Tacos"
+      ],
+      "style": [
+        "Colorful"
+      ],
+      "vibe": [
+        "Casual",
+        "Trendy"
+      ],
+      "time": [
+        "Lunch",
+        "Dinner"
+      ],
+      "light": "Good anytime",
+      "noise": "Moderate",
+      "price": "$$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 8.3,
+      "src": [
+        "Notion",
+        "Friend"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Casual meal"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Short Uber"
+      ],
+      "safety": [],
+      "hood": "CDMX",
+      "desc": "Fusion-ish tacos with an oriental twist — Mariana's tip.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Cari%C3%B1ito%20Tacos%20CDMX"
+    },
+    {
+      "n": "Chico Julio",
+      "lat": 19.415,
+      "lon": -99.16,
+      "typ": [
+        "Restaurant"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Tacos",
+        "Seafood"
+      ],
+      "style": [
+        "Colorful"
+      ],
+      "vibe": [
+        "Casual",
+        "Trendy"
+      ],
+      "time": [
+        "Lunch",
+        "Dinner"
+      ],
+      "light": "Good anytime",
+      "noise": "Moderate",
+      "price": "$$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 8.3,
+      "src": [
+        "Notion",
+        "Friend"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Casual meal"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Walkable from Airbnb"
+      ],
+      "safety": [
+        "Seafood-heavy"
+      ],
+      "hood": "Roma, CDMX",
+      "desc": "Fish & seafood tacos — Mariana's tip.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Chico%20Julio%20Roma%20tacos%20CDMX"
+    },
+    {
+      "n": "Cantón Mexicali",
+      "lat": 19.4165048,
+      "lon": -99.167653,
+      "typ": [
+        "Restaurant"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Regional"
+      ],
+      "style": [
+        "Historic"
+      ],
+      "vibe": [
+        "Local",
+        "Lively"
+      ],
+      "time": [
+        "Lunch",
+        "Dinner"
+      ],
+      "light": "Good anytime",
+      "noise": "Loud",
+      "price": "$$$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 8.0,
+      "src": [
+        "Notion",
+        "Friend"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Group dinner"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Walkable from Airbnb",
+        "Reservation required"
+      ],
+      "safety": [],
+      "hood": "Condesa, CDMX",
+      "desc": "Chinese-Mexican institution — taquería-style downstairs, fancier upstairs. Highly recommended — Mariana's tip.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Canton%20Mexicali%20Condesa%20CDMX"
+    },
+    {
+      "n": "Madre Café",
+      "lat": 19.415,
+      "lon": -99.16,
+      "typ": [
+        "Café"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Coffee",
+        "Brunch"
+      ],
+      "style": [
+        "Modern"
+      ],
+      "vibe": [
+        "Relaxed"
+      ],
+      "time": [
+        "Morning",
+        "Breakfast"
+      ],
+      "light": "Good anytime",
+      "noise": "Quiet",
+      "price": "$$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 7.3,
+      "src": [
+        "Notion"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Quick stop"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Walkable from Airbnb"
+      ],
+      "safety": [],
+      "hood": "Roma, CDMX",
+      "desc": "Roma neighborhood café.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Madre%20Caf%C3%A9%20Roma%20CDMX"
+    },
+    {
+      "n": "Tetetlán",
+      "lat": 19.32,
+      "lon": -99.201,
+      "typ": [
+        "Restaurant"
+      ],
+      "exp": [
+        "Food",
+        "Architecture"
+      ],
+      "food": [
+        "Contemporary Mexican"
+      ],
+      "style": [
+        "Garden",
+        "Design-forward",
+        "Modern",
+        "Has a view"
+      ],
+      "vibe": [
+        "Sophisticated",
+        "Romantic"
+      ],
+      "time": [
+        "Lunch",
+        "Golden hour"
+      ],
+      "light": "Better at sunset",
+      "noise": "Quiet",
+      "price": "$$$$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 8.5,
+      "src": [
+        "Notion",
+        "Friend"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Special dinner"
+      ],
+      "effort": [
+        "Moderate effort"
+      ],
+      "conv": [
+        "Short Uber",
+        "Reservation required"
+      ],
+      "safety": [],
+      "hood": "Pedregal, CDMX",
+      "desc": "\"Expensive and far, but beautiful\" — Mariana's tip. Barragán-adjacent architecture, volcanic-rock garden setting.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Tetetl%C3%A1n%20restaurante%20Pedregal%20CDMX"
+    },
+    {
+      "n": "Fonda la 99",
+      "lat": 19.42,
+      "lon": -99.16,
+      "typ": [
+        "Restaurant"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Regional",
+        "Mexican"
+      ],
+      "style": [
+        "Local"
+      ],
+      "vibe": [
+        "Casual",
+        "Local"
+      ],
+      "time": [
+        "Lunch",
+        "Dinner"
+      ],
+      "light": "Good anytime",
+      "noise": "Loud",
+      "price": "$$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 7.5,
+      "src": [
+        "Notion"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Casual meal"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Short Uber"
+      ],
+      "safety": [],
+      "hood": "CDMX",
+      "desc": "Yucatecan food, cochinita pibil.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Fonda%2099.99%20CDMX"
+    },
+    {
+      "n": "Churrería El Moro",
+      "lat": 19.4326,
+      "lon": -99.1332,
+      "typ": [
+        "Bakery"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Pastries",
+        "Street food"
+      ],
+      "style": [
+        "Historic",
+        "Colorful"
+      ],
+      "vibe": [
+        "Touristy",
+        "Local"
+      ],
+      "time": [
+        "Late night",
+        "Breakfast"
+      ],
+      "light": "Best at night",
+      "noise": "Loud",
+      "price": "$",
+      "rec": [
+        "Local institution"
+      ],
+      "grating": null,
+      "greviews": null,
+      "score": 8.0,
+      "src": [
+        "Notion"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Quick stop",
+        "Late night"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Metro-friendly",
+        "Long queue"
+      ],
+      "safety": [],
+      "hood": "Centro / multiple locations, CDMX",
+      "desc": "Classic CDMX churros institution, open late.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Churrer%C3%ADa%20El%20Moro%20CDMX"
+    },
+    {
+      "n": "Esquina Común",
+      "lat": 19.4126,
+      "lon": -99.171,
+      "typ": [
+        "Restaurant"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Contemporary Mexican",
+        "Fine dining"
+      ],
+      "style": [
+        "Rooftop",
+        "Design-forward"
+      ],
+      "vibe": [
+        "Trendy",
+        "Intimate"
+      ],
+      "time": [
+        "Dinner"
+      ],
+      "light": "Better at sunset",
+      "noise": "Quiet",
+      "price": "$$$",
+      "rec": [
+        "Michelin 1 Star"
+      ],
+      "grating": null,
+      "greviews": null,
+      "score": 9.6,
+      "src": [
+        "Notion",
+        "Friend",
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Special dinner",
+        "Date night"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Walkable from Airbnb",
+        "Long queue"
+      ],
+      "safety": [],
+      "hood": "Condesa, CDMX",
+      "desc": "Intimate rooftop tasting-style meal, Condesa. Michelin star but cheap; always packed, no reservations, only open Thu-Sun — Mariana's tip.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Esquina%20Com%C3%BAn%20Condesa%20CDMX"
+    },
+    {
+      "n": "Museo Frida Kahlo (Casa Azul)",
+      "lat": 19.3467,
+      "lon": -99.1618,
+      "typ": [
+        "Museum"
+      ],
+      "exp": [
+        "Culture",
+        "Art",
+        "History"
+      ],
+      "food": [],
+      "style": [
+        "Colorful",
+        "Historic",
+        "Garden"
+      ],
+      "vibe": [
+        "Touristy"
+      ],
+      "time": [
+        "Morning",
+        "Afternoon"
+      ],
+      "light": "Good anytime",
+      "noise": "Moderate",
+      "price": "$$",
+      "rec": [
+        "Local institution"
+      ],
+      "grating": null,
+      "greviews": null,
+      "score": 9.1,
+      "src": [
+        "Notion",
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Full-day plan"
+      ],
+      "effort": [
+        "Moderate effort"
+      ],
+      "conv": [
+        "Short Uber",
+        "Reservation required"
+      ],
+      "safety": [],
+      "hood": "Coyoacán, CDMX",
+      "desc": "Frida Kahlo's home. Book online in advance, no in-person tickets.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Museo%20Frida%20Kahlo%20Casa%20Azul%20Coyoac%C3%A1n"
+    },
+    {
+      "n": "Museo Anahuacalli",
+      "lat": 19.3467,
+      "lon": -99.1618,
+      "typ": [
+        "Museum"
+      ],
+      "exp": [
+        "Culture",
+        "Art",
+        "Archaeology",
+        "Architecture"
+      ],
+      "food": [],
+      "style": [
+        "Modern",
+        "Historic",
+        "Has a view"
+      ],
+      "vibe": [
+        "Quiet",
+        "Sophisticated"
+      ],
+      "time": [
+        "Afternoon"
+      ],
+      "light": "Good anytime",
+      "noise": "Quiet",
+      "price": "$$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 9.5,
+      "src": [
+        "Notion",
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Full-day plan"
+      ],
+      "effort": [
+        "Moderate effort"
+      ],
+      "conv": [
+        "Short Uber"
+      ],
+      "safety": [],
+      "hood": "Coyoacán area, CDMX",
+      "desc": "Diego Rivera's pre-Hispanic collection inside extraordinary volcanic-stone architecture.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Museo%20Anahuacalli%20CDMX"
+    },
+    {
+      "n": "Castillo de Chapultepec",
+      "lat": 19.4204,
+      "lon": -99.1818,
+      "typ": [
+        "Museum",
+        "Viewpoint"
+      ],
+      "exp": [
+        "History",
+        "Architecture"
+      ],
+      "food": [],
+      "style": [
+        "Historic",
+        "Scenic",
+        "Has a view"
+      ],
+      "vibe": [
+        "Touristy"
+      ],
+      "time": [
+        "Morning",
+        "Afternoon",
+        "Golden hour"
+      ],
+      "light": "Good anytime",
+      "noise": "Quiet",
+      "price": "$$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 9.2,
+      "src": [
+        "Notion",
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Full-day plan"
+      ],
+      "effort": [
+        "Moderate effort",
+        "Lots of walking"
+      ],
+      "conv": [
+        "Metro-friendly",
+        "Lots of walking"
+      ],
+      "safety": [],
+      "hood": "Chapultepec, CDMX",
+      "desc": "Historic rooms, gardens and elevated city views; easy to pair with a Chapultepec walk.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Castillo%20de%20Chapultepec%20CDMX"
+    },
+    {
+      "n": "Museo de Arte Moderno",
+      "lat": 19.4204,
+      "lon": -99.1818,
+      "typ": [
+        "Museum"
+      ],
+      "exp": [
+        "Art"
+      ],
+      "food": [],
+      "style": [
+        "Modern"
+      ],
+      "vibe": [
+        "Quiet"
+      ],
+      "time": [
+        "Afternoon"
+      ],
+      "light": "Good anytime",
+      "noise": "Quiet",
+      "price": "$$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 7.8,
+      "src": [
+        "Notion"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Full-day plan"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Metro-friendly"
+      ],
+      "safety": [],
+      "hood": "Chapultepec, CDMX",
+      "desc": "Modern art museum in Chapultepec Park.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Museo%20de%20Arte%20Moderno%20CDMX"
+    },
+    {
+      "n": "Museo Nacional de Antropología",
+      "lat": 19.4204,
+      "lon": -99.1818,
+      "typ": [
+        "Museum"
+      ],
+      "exp": [
+        "Culture",
+        "History",
+        "Archaeology"
+      ],
+      "food": [],
+      "style": [
+        "Modern",
+        "Historic"
+      ],
+      "vibe": [
+        "Touristy",
+        "Sophisticated"
+      ],
+      "time": [
+        "Morning",
+        "Afternoon"
+      ],
+      "light": "Good anytime",
+      "noise": "Moderate",
+      "price": "$$",
+      "rec": [
+        "Local institution"
+      ],
+      "grating": null,
+      "greviews": null,
+      "score": 10.0,
+      "src": [
+        "Notion",
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Full-day plan"
+      ],
+      "effort": [
+        "Half day"
+      ],
+      "conv": [
+        "Metro-friendly"
+      ],
+      "safety": [],
+      "hood": "Chapultepec, CDMX",
+      "desc": "Mexico's essential pre-Hispanic museum — do this before Teotihuacán if possible. Most-visited museum in the city.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Museo%20Nacional%20de%20Antropolog%C3%ADa%20CDMX"
+    },
+    {
+      "n": "Museo de Arte Popular",
+      "lat": 19.4326,
+      "lon": -99.1332,
+      "typ": [
+        "Museum"
+      ],
+      "exp": [
+        "Art",
+        "Culture"
+      ],
+      "food": [],
+      "style": [
+        "Colorful"
+      ],
+      "vibe": [
+        "Quiet"
+      ],
+      "time": [
+        "Afternoon"
+      ],
+      "light": "Good anytime",
+      "noise": "Quiet",
+      "price": "$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 7.6,
+      "src": [
+        "Notion"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Quick stop"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Walkable from Airbnb",
+        "Metro-friendly"
+      ],
+      "safety": [],
+      "hood": "Centro, CDMX",
+      "desc": "Mexican folk art museum.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Museo%20de%20Arte%20Popular%20CDMX"
+    },
+    {
+      "n": "Restaurante El Lago (Lago|Algo)",
+      "lat": 19.4204,
+      "lon": -99.1818,
+      "typ": [
+        "Restaurant"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Contemporary Mexican"
+      ],
+      "style": [
+        "Scenic",
+        "Modern",
+        "Has a view"
+      ],
+      "vibe": [
+        "Romantic",
+        "Sophisticated"
+      ],
+      "time": [
+        "Lunch",
+        "Dinner",
+        "Golden hour"
+      ],
+      "light": "Better at sunset",
+      "noise": "Quiet",
+      "price": "$$$$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 7.8,
+      "src": [
+        "Notion"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Special dinner"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Reservation required"
+      ],
+      "safety": [],
+      "hood": "Chapultepec, CDMX",
+      "desc": "Lakeside restaurant inside Chapultepec Park (formerly \"El Lago\").",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Lago%20Algo%20restaurante%20Chapultepec%20CDMX"
+    },
+    {
+      "n": "Teotihuacán",
+      "lat": 19.6925,
+      "lon": -98.8438,
+      "typ": [
+        "Day trip",
+        "Ruins"
+      ],
+      "exp": [
+        "Archaeology",
+        "History",
+        "Active"
+      ],
+      "food": [],
+      "style": [
+        "Historic",
+        "Scenic",
+        "Has a view"
+      ],
+      "vibe": [
+        "Touristy"
+      ],
+      "time": [
+        "Morning"
+      ],
+      "light": "Best in daylight",
+      "noise": "Moderate",
+      "price": "$$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 10.0,
+      "src": [
+        "Notion",
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Full-day plan"
+      ],
+      "effort": [
+        "High effort",
+        "Lots of walking",
+        "Full day"
+      ],
+      "conv": [
+        "Short Uber"
+      ],
+      "safety": [],
+      "hood": "Teotihuacán, State of Mexico",
+      "desc": "Enormous pre-Hispanic archaeological city. Go early, hire a proper guide.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Zona%20Arqueol%C3%B3gica%20de%20Teotihuac%C3%A1n"
+    },
+    {
+      "n": "Xochimilco (Trajineras)",
+      "lat": 19.2648,
+      "lon": -99.1028,
+      "typ": [
+        "Day trip",
+        "Activity"
+      ],
+      "exp": [
+        "Nature",
+        "Active"
+      ],
+      "food": [],
+      "style": [
+        "Colorful",
+        "Has a view"
+      ],
+      "vibe": [
+        "Lively",
+        "Party",
+        "Social"
+      ],
+      "time": [
+        "Afternoon"
+      ],
+      "light": "Best in daylight",
+      "noise": "Loud",
+      "price": "$$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 8.0,
+      "src": [
+        "Notion"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Group dinner",
+        "Full-day plan"
+      ],
+      "effort": [
+        "Half day"
+      ],
+      "conv": [
+        "Short Uber"
+      ],
+      "safety": [],
+      "hood": "Xochimilco, CDMX",
+      "desc": "Colorful trajineras boat ride through the canals.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Embarcadero%20Nuevo%20Nativitas%20Xochimilco"
+    },
+    {
+      "n": "Nido de Quetzalcoatl",
+      "lat": 19.468,
+      "lon": -99.249,
+      "typ": [
+        "Viewpoint",
+        "Activity"
+      ],
+      "exp": [
+        "Architecture",
+        "Nature"
+      ],
+      "food": [],
+      "style": [
+        "Colorful",
+        "Design-forward",
+        "Has a view"
+      ],
+      "vibe": [
+        "Quiet"
+      ],
+      "time": [
+        "Afternoon"
+      ],
+      "light": "Good anytime",
+      "noise": "Quiet",
+      "price": "$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 6.5,
+      "src": [
+        "Notion"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Quick stop"
+      ],
+      "effort": [
+        "Moderate effort"
+      ],
+      "conv": [
+        "Short Uber"
+      ],
+      "safety": [],
+      "hood": "Naucalpan, Greater CDMX",
+      "desc": "Optional/maybe — striking serpent-shaped building, a bit out of the way.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Nido%20de%20Quetzalcoatl%20CDMX"
+    },
+    {
+      "n": "Templo Mayor + Zócalo",
+      "lat": 19.4326,
+      "lon": -99.1332,
+      "typ": [
+        "Ruins",
+        "Museum"
+      ],
+      "exp": [
+        "Archaeology",
+        "History"
+      ],
+      "food": [],
+      "style": [
+        "Historic"
+      ],
+      "vibe": [
+        "Touristy"
+      ],
+      "time": [
+        "Morning",
+        "Afternoon"
+      ],
+      "light": "Good anytime",
+      "noise": "Loud",
+      "price": "$$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 9.7,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Full-day plan"
+      ],
+      "effort": [
+        "Moderate effort"
+      ],
+      "conv": [
+        "Metro-friendly",
+        "Walkable from Airbnb"
+      ],
+      "safety": [],
+      "hood": "Centro Histórico, CDMX",
+      "desc": "Mexica ruins in the middle of the historic city — archaeology, architecture and street life in one walk.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Templo%20Mayor%20CDMX"
+    },
+    {
+      "n": "Muévete en Bici (Reforma Sunday cyclovía)",
+      "lat": 19.427,
+      "lon": -99.169,
+      "typ": [
+        "Activity"
+      ],
+      "exp": [
+        "Active",
+        "Nature"
+      ],
+      "food": [],
+      "style": [
+        "Scenic"
+      ],
+      "vibe": [
+        "Lively",
+        "Social"
+      ],
+      "time": [
+        "Morning"
+      ],
+      "light": "Best in daylight",
+      "noise": "Moderate",
+      "price": "Free",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 9.8,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Full-day plan"
+      ],
+      "effort": [
+        "Moderate effort",
+        "Lots of walking"
+      ],
+      "conv": [
+        "Walkable from Airbnb",
+        "Bike-friendly"
+      ],
+      "safety": [],
+      "hood": "Paseo de la Reforma, CDMX",
+      "desc": "Sunday mornings ~8am-2pm the city opens major roads (Reforma) to bikes/pedestrians — great active-tourism morning.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Paseo%20de%20la%20Reforma%20CDMX"
+    },
+    {
+      "n": "Mercado de Coyoacán",
+      "lat": 19.3467,
+      "lon": -99.1618,
+      "typ": [
+        "Market"
+      ],
+      "exp": [
+        "Food",
+        "Culture"
+      ],
+      "food": [
+        "Street food",
+        "Mexican"
+      ],
+      "style": [
+        "Colorful",
+        "Local"
+      ],
+      "vibe": [
+        "Lively",
+        "Local"
+      ],
+      "time": [
+        "Morning",
+        "Lunch"
+      ],
+      "light": "Good anytime",
+      "noise": "Loud",
+      "price": "$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 8.9,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Casual meal",
+        "Full-day plan"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Short Uber"
+      ],
+      "safety": [],
+      "hood": "Coyoacán, CDMX",
+      "desc": "Colorful traditional market — pairs well with Casa Azul for a fuller cultural day.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Mercado%20de%20Coyoac%C3%A1n%20CDMX"
+    },
+    {
+      "n": "Palacio de Bellas Artes",
+      "lat": 19.4326,
+      "lon": -99.1332,
+      "typ": [
+        "Museum",
+        "Viewpoint"
+      ],
+      "exp": [
+        "Art",
+        "Architecture",
+        "Live performance"
+      ],
+      "food": [],
+      "style": [
+        "Historic",
+        "Design-forward",
+        "Has a view"
+      ],
+      "vibe": [
+        "Touristy",
+        "Sophisticated"
+      ],
+      "time": [
+        "Afternoon",
+        "Dinner"
+      ],
+      "light": "Good anytime",
+      "noise": "Quiet",
+      "price": "$$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 9.0,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Full-day plan"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Metro-friendly",
+        "Walkable from Airbnb"
+      ],
+      "safety": [],
+      "hood": "Centro Histórico, CDMX",
+      "desc": "Monumental architecture, major murals and performing arts — compact cultural anchor in Centro.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Palacio%20de%20Bellas%20Artes%20CDMX"
+    },
+    {
+      "n": "Ballet Folklórico de México (Bellas Artes)",
+      "lat": 19.4326,
+      "lon": -99.1332,
+      "typ": [
+        "Activity"
+      ],
+      "exp": [
+        "Live performance",
+        "Culture"
+      ],
+      "food": [],
+      "style": [
+        "Historic",
+        "Colorful"
+      ],
+      "vibe": [
+        "Touristy",
+        "Sophisticated"
+      ],
+      "time": [
+        "Dinner",
+        "Late night"
+      ],
+      "light": "Best at night",
+      "noise": "Quiet",
+      "price": "$$$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 9.4,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Special dinner"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Metro-friendly",
+        "Reservation required"
+      ],
+      "safety": [],
+      "hood": "Centro Histórico, CDMX",
+      "desc": "Highly visual Mexican dance & music performance at Bellas Artes. July shows listed for the 12th, 19th, 26th — check current schedule.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Ballet%20Folkl%C3%B3rico%20de%20M%C3%A9xico%20Bellas%20Artes"
+    },
+    {
+      "n": "Mercado Medellín",
+      "lat": 19.409,
+      "lon": -99.158,
+      "typ": [
+        "Market"
+      ],
+      "exp": [
+        "Food",
+        "Shopping"
+      ],
+      "food": [
+        "Street food",
+        "Regional"
+      ],
+      "style": [
+        "Colorful",
+        "Local"
+      ],
+      "vibe": [
+        "Local",
+        "Lively"
+      ],
+      "time": [
+        "Morning",
+        "Lunch"
+      ],
+      "light": "Good anytime",
+      "noise": "Loud",
+      "price": "$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 9.0,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Casual meal",
+        "Quick stop"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Walkable from Airbnb"
+      ],
+      "safety": [],
+      "hood": "Roma Sur, CDMX",
+      "desc": "Multicultural Latin American market near the Airbnb — easy food-oriented exploration.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Mercado%20Medell%C3%ADn%20CDMX"
+    },
+    {
+      "n": "Expendio de Maíz",
+      "lat": 19.42,
+      "lon": -99.16,
+      "typ": [
+        "Restaurant"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Contemporary Mexican"
+      ],
+      "style": [
+        "Rustic",
+        "Minimalist"
+      ],
+      "vibe": [
+        "Intimate",
+        "Trendy"
+      ],
+      "time": [
+        "Dinner"
+      ],
+      "light": "Good anytime",
+      "noise": "Moderate",
+      "price": "$$$",
+      "rec": [
+        "Michelin 1 Star"
+      ],
+      "grating": null,
+      "greviews": null,
+      "score": 10.0,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Food-lover pick",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Special dinner"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Reservation required",
+        "Short Uber"
+      ],
+      "safety": [],
+      "hood": "CDMX",
+      "desc": "Informal, highly creative corn-centered meal with no conventional menu — most distinctive food experience.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Expendio%20de%20Ma%C3%ADz%20restaurante%20CDMX"
+    },
+    {
+      "n": "Máximo Bistrot (Máximo)",
+      "lat": 19.4173,
+      "lon": -99.1594,
+      "typ": [
+        "Restaurant"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Contemporary Mexican"
+      ],
+      "style": [
+        "Modern"
+      ],
+      "vibe": [
+        "Sophisticated",
+        "Relaxed"
+      ],
+      "time": [
+        "Dinner"
+      ],
+      "light": "Good anytime",
+      "noise": "Quiet",
+      "price": "$$$",
+      "rec": [
+        "Michelin 1 Star"
+      ],
+      "grating": 4.1,
+      "greviews": null,
+      "score": 9.8,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Special dinner",
+        "Date night"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Walkable from Airbnb",
+        "Reservation required"
+      ],
+      "safety": [],
+      "hood": "Roma Norte, CDMX",
+      "desc": "Polished seasonal cooking, close to your base. French-technique, Mexican-market-driven cooking from chef Eduardo \"Lalo\" García.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=M%C3%A1ximo%20Bistrot%20Roma%20Norte%20CDMX"
+    },
+    {
+      "n": "Masala y Maíz",
+      "lat": 19.42,
+      "lon": -99.16,
+      "typ": [
+        "Restaurant"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Contemporary Mexican"
+      ],
+      "style": [
+        "Design-forward"
+      ],
+      "vibe": [
+        "Trendy"
+      ],
+      "time": [
+        "Dinner"
+      ],
+      "light": "Good anytime",
+      "noise": "Moderate",
+      "price": "$$$",
+      "rec": [
+        "Michelin 1 Star"
+      ],
+      "grating": null,
+      "greviews": null,
+      "score": 9.7,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Food-lover pick",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Special dinner"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Reservation required",
+        "Short Uber"
+      ],
+      "safety": [],
+      "hood": "CDMX",
+      "desc": "Creative intersection of Mexican, Indian and East African culinary traditions.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Masala%20y%20Ma%C3%ADz%20restaurante%20CDMX"
+    },
+    {
+      "n": "Quintonil",
+      "lat": 19.4326,
+      "lon": -99.1962,
+      "typ": [
+        "Restaurant"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Contemporary Mexican",
+        "Fine dining"
+      ],
+      "style": [
+        "Modern",
+        "Garden"
+      ],
+      "vibe": [
+        "Sophisticated"
+      ],
+      "time": [
+        "Dinner"
+      ],
+      "light": "Good anytime",
+      "noise": "Quiet",
+      "price": "$$$$",
+      "rec": [
+        "Michelin 2 Stars"
+      ],
+      "grating": 4.2,
+      "greviews": null,
+      "score": 9.5,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Special dinner"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Reservation required",
+        "Short Uber"
+      ],
+      "safety": [],
+      "hood": "Polanco, CDMX",
+      "desc": "Ambitious contemporary Mexican tasting menu — book the moment you have dates. Considered more emotionally satisfying than Pujol by some.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Quintonil%20Polanco%20CDMX"
+    },
+    {
+      "n": "Gaba",
+      "lat": 19.427,
+      "lon": -99.165,
+      "typ": [
+        "Restaurant"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Contemporary Mexican"
+      ],
+      "style": [
+        "Modern"
+      ],
+      "vibe": [
+        "Sophisticated"
+      ],
+      "time": [
+        "Dinner"
+      ],
+      "light": "Good anytime",
+      "noise": "Quiet",
+      "price": "$$$",
+      "rec": [
+        "Michelin 1 Star"
+      ],
+      "grating": null,
+      "greviews": null,
+      "score": 9.1,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Special dinner"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Reservation required",
+        "Short Uber"
+      ],
+      "safety": [],
+      "hood": "Cuauhtémoc, CDMX",
+      "desc": "Newer high-end Mexican cooking — good when older famous reservations are unavailable.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Gaba%20restaurante%20Cuauht%C3%A9moc%20CDMX"
+    },
+    {
+      "n": "El Vilsito",
+      "lat": 19.382,
+      "lon": -99.166,
+      "typ": [
+        "Restaurant"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Tacos",
+        "Street food"
+      ],
+      "style": [
+        "Rustic"
+      ],
+      "vibe": [
+        "Local",
+        "Lively"
+      ],
+      "time": [
+        "Late night",
+        "Dinner"
+      ],
+      "light": "Best at night",
+      "noise": "Loud",
+      "price": "$",
+      "rec": [
+        "Bib Gourmand"
+      ],
+      "grating": null,
+      "greviews": null,
+      "score": 9.7,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Late night",
+        "Casual meal"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Short Uber",
+        "Walk-in friendly"
+      ],
+      "safety": [],
+      "hood": "Del Valle, CDMX",
+      "desc": "Auto-repair shop by day, extremely popular taquería at night.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=El%20Vilsito%20taquer%C3%ADa%20CDMX"
+    },
+    {
+      "n": "Taquería Los Cocuyos",
+      "lat": 19.4326,
+      "lon": -99.1332,
+      "typ": [
+        "Restaurant"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Tacos",
+        "Street food"
+      ],
+      "style": [
+        "Rustic",
+        "Historic"
+      ],
+      "vibe": [
+        "Local",
+        "Casual"
+      ],
+      "time": [
+        "Lunch",
+        "Late night"
+      ],
+      "light": "Good anytime",
+      "noise": "Loud",
+      "price": "$",
+      "rec": [
+        "Bib Gourmand"
+      ],
+      "grating": null,
+      "greviews": null,
+      "score": 9.5,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Quick stop",
+        "Late night"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Metro-friendly",
+        "Walk-in friendly"
+      ],
+      "safety": [],
+      "hood": "Centro Histórico, CDMX",
+      "desc": "Old-school Centro taco counter known for slow-cooked meats — perfect after Templo Mayor or Bellas Artes.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Taquer%C3%ADa%20Los%20Cocuyos%20Centro%20CDMX"
+    },
+    {
+      "n": "Tacos Hola El Güero",
+      "lat": 19.4126,
+      "lon": -99.171,
+      "typ": [
+        "Restaurant"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Tacos",
+        "Street food"
+      ],
+      "style": [
+        "Rustic"
+      ],
+      "vibe": [
+        "Local",
+        "Casual"
+      ],
+      "time": [
+        "Lunch"
+      ],
+      "light": "Good anytime",
+      "noise": "Loud",
+      "price": "$",
+      "rec": [
+        "Michelin Selected"
+      ],
+      "grating": null,
+      "greviews": null,
+      "score": 9.3,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Quick stop",
+        "Casual meal"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Walkable from Airbnb",
+        "Walk-in friendly"
+      ],
+      "safety": [],
+      "hood": "Condesa area, CDMX",
+      "desc": "Classic guisado tacos — practical, better for lunch than a late formal meal.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Tacos%20Hola%20El%20G%C3%BCero%20CDMX"
+    },
+    {
+      "n": "Plonk",
+      "lat": 19.42,
+      "lon": -99.16,
+      "typ": [
+        "Restaurant"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Contemporary Mexican"
+      ],
+      "style": [
+        "Modern"
+      ],
+      "vibe": [
+        "Relaxed"
+      ],
+      "time": [
+        "Dinner"
+      ],
+      "light": "Good anytime",
+      "noise": "Moderate",
+      "price": "$$$",
+      "rec": [
+        "Bib Gourmand"
+      ],
+      "grating": null,
+      "greviews": null,
+      "score": 9.0,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Casual meal",
+        "Group dinner"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Short Uber",
+        "Walk-in friendly"
+      ],
+      "safety": [],
+      "hood": "CDMX",
+      "desc": "Relaxed neighborhood restaurant, good for a flexible evening with genuinely thoughtful cooking.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Plonk%20restaurante%20CDMX"
+    },
+    {
+      "n": "Botánico",
+      "lat": 19.4126,
+      "lon": -99.171,
+      "typ": [
+        "Restaurant"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Contemporary Mexican",
+        "Seafood"
+      ],
+      "style": [
+        "Garden",
+        "Design-forward"
+      ],
+      "vibe": [
+        "Lively",
+        "Sophisticated"
+      ],
+      "time": [
+        "Dinner"
+      ],
+      "light": "Good anytime",
+      "noise": "Moderate",
+      "price": "$$$",
+      "rec": [
+        "Michelin Selected"
+      ],
+      "grating": null,
+      "greviews": null,
+      "score": 8.8,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Group dinner"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Walkable from Airbnb",
+        "Reservation required"
+      ],
+      "safety": [
+        "Seafood-heavy",
+        "Crustacean risk"
+      ],
+      "hood": "Condesa, CDMX",
+      "desc": "Lush garden-style Condesa restaurant, strong setting for a group dinner. NOTE: some dishes have crab/shrimp.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Bot%C3%A1nico%20restaurante%20Condesa%20CDMX"
+    },
+    {
+      "n": "MeroToro",
+      "lat": 19.4126,
+      "lon": -99.171,
+      "typ": [
+        "Restaurant"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Seafood",
+        "Contemporary Mexican"
+      ],
+      "style": [
+        "Modern"
+      ],
+      "vibe": [
+        "Relaxed",
+        "Sophisticated"
+      ],
+      "time": [
+        "Dinner"
+      ],
+      "light": "Good anytime",
+      "noise": "Quiet",
+      "price": "$$$",
+      "rec": [
+        "Michelin Selected"
+      ],
+      "grating": null,
+      "greviews": null,
+      "score": 8.9,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Casual meal"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Walkable from Airbnb",
+        "Reservation required"
+      ],
+      "safety": [
+        "Seafood-heavy"
+      ],
+      "hood": "Condesa, CDMX",
+      "desc": "Baja-influenced contemporary cooking — good neighborhood dinner without a tasting-menu commitment. Confirm allergy handling.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=MeroToro%20restaurante%20Condesa%20CDMX"
+    },
+    {
+      "n": "Lardo",
+      "lat": 19.4126,
+      "lon": -99.171,
+      "typ": [
+        "Restaurant"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Mexican"
+      ],
+      "style": [
+        "Rustic",
+        "Modern"
+      ],
+      "vibe": [
+        "Lively",
+        "Casual"
+      ],
+      "time": [
+        "Breakfast",
+        "Lunch",
+        "Dinner"
+      ],
+      "light": "Good anytime",
+      "noise": "Moderate",
+      "price": "$$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 8.8,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Casual meal",
+        "First night"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Walkable from Airbnb",
+        "Walk-in friendly"
+      ],
+      "safety": [],
+      "hood": "Condesa, CDMX",
+      "desc": "Doesn't take reservations — genuine walk-in, best for an early lunch. Wood-fired, market-driven menu.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Lardo%20restaurante%20Condesa%20CDMX"
+    },
+    {
+      "n": "Contramar",
+      "lat": 19.4173,
+      "lon": -99.1594,
+      "typ": [
+        "Restaurant"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Seafood"
+      ],
+      "style": [
+        "Modern"
+      ],
+      "vibe": [
+        "Lively",
+        "Trendy"
+      ],
+      "time": [
+        "Lunch"
+      ],
+      "light": "Good anytime",
+      "noise": "Loud",
+      "price": "$$$",
+      "rec": [
+        "Bib Gourmand"
+      ],
+      "grating": 4.5,
+      "greviews": 6500,
+      "score": 8.2,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Group dinner",
+        "Casual meal"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Walkable from Airbnb",
+        "Walk-in friendly"
+      ],
+      "safety": [
+        "Seafood-heavy",
+        "Crustacean risk"
+      ],
+      "hood": "Roma Norte, CDMX",
+      "desc": "Iconic seafood lunch, lively design-conscious room. CAUTION: heavily seafood-oriented — confirm crustacean/salmon allergy handling. Genuinely accepts walk-ins.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Contramar%20Roma%20Norte%20CDMX"
+    },
+    {
+      "n": "Saint",
+      "lat": 19.4105,
+      "lon": -99.175,
+      "typ": [
+        "Bakery"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Pastries",
+        "Coffee"
+      ],
+      "style": [
+        "Modern"
+      ],
+      "vibe": [
+        "Trendy"
+      ],
+      "time": [
+        "Breakfast",
+        "Morning"
+      ],
+      "light": "Good anytime",
+      "noise": "Quiet",
+      "price": "$$",
+      "rec": [
+        "Local institution"
+      ],
+      "grating": null,
+      "greviews": null,
+      "score": 9.8,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Quick stop"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Walkable from Airbnb"
+      ],
+      "safety": [],
+      "hood": "Hipódromo, CDMX",
+      "desc": "Excellent laminated pastries, bread & sandwiches — named top bakery in Condé Nast Traveler's 2026 CDMX selection.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Saint%20panader%C3%ADa%20Hip%C3%B3dromo%20CDMX"
+    },
+    {
+      "n": "Buendía Pan y Café",
+      "lat": 19.42,
+      "lon": -99.16,
+      "typ": [
+        "Bakery",
+        "Café"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Pastries",
+        "Coffee"
+      ],
+      "style": [
+        "Modern"
+      ],
+      "vibe": [
+        "Relaxed"
+      ],
+      "time": [
+        "Breakfast",
+        "Morning"
+      ],
+      "light": "Good anytime",
+      "noise": "Quiet",
+      "price": "$$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 9.3,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Quick stop"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Short Uber"
+      ],
+      "safety": [],
+      "hood": "CDMX",
+      "desc": "Inventive versions of Mexican breads and pastries — sample several things.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Buend%C3%ADa%20Pan%20y%20Caf%C3%A9%20CDMX"
+    },
+    {
+      "n": "Pastelería Ideal",
+      "lat": 19.4326,
+      "lon": -99.1332,
+      "typ": [
+        "Bakery"
+      ],
+      "exp": [
+        "Food",
+        "Culture"
+      ],
+      "food": [
+        "Pastries"
+      ],
+      "style": [
+        "Historic",
+        "Colorful"
+      ],
+      "vibe": [
+        "Touristy",
+        "Local"
+      ],
+      "time": [
+        "Morning"
+      ],
+      "light": "Good anytime",
+      "noise": "Loud",
+      "price": "$",
+      "rec": [
+        "Local institution"
+      ],
+      "grating": null,
+      "greviews": null,
+      "score": 9.2,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Quick stop"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Metro-friendly"
+      ],
+      "safety": [],
+      "hood": "Centro Histórico, CDMX",
+      "desc": "Enormous traditional bakery, walk around with a tray choosing pastries — more cultural spectacle than refined café.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Pasteler%C3%ADa%20Ideal%20Centro%20CDMX"
+    },
+    {
+      "n": "Odette",
+      "lat": 19.42,
+      "lon": -99.16,
+      "typ": [
+        "Bakery"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Pastries"
+      ],
+      "style": [
+        "Minimalist",
+        "Modern"
+      ],
+      "vibe": [
+        "Sophisticated"
+      ],
+      "time": [
+        "Breakfast",
+        "Afternoon"
+      ],
+      "light": "Good anytime",
+      "noise": "Quiet",
+      "price": "$$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 9.1,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Quick stop"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Short Uber"
+      ],
+      "safety": [],
+      "hood": "CDMX",
+      "desc": "Precise French-style pastry, more polished feel — for elegant desserts rather than rustic bread.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Odette%20pasteler%C3%ADa%20CDMX"
+    },
+    {
+      "n": "Costra",
+      "lat": 19.42,
+      "lon": -99.16,
+      "typ": [
+        "Bakery"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Pastries"
+      ],
+      "style": [
+        "Modern"
+      ],
+      "vibe": [
+        "Trendy"
+      ],
+      "time": [
+        "Morning"
+      ],
+      "light": "Good anytime",
+      "noise": "Quiet",
+      "price": "$$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 9.0,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Quick stop"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Short Uber"
+      ],
+      "safety": [],
+      "hood": "CDMX",
+      "desc": "Modern bakery known for bold sweet breads and large cinnamon rolls.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Costra%20panader%C3%ADa%20CDMX"
+    },
+    {
+      "n": "Café Nin",
+      "lat": 19.415,
+      "lon": -99.16,
+      "typ": [
+        "Café",
+        "Restaurant"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Brunch",
+        "Coffee",
+        "Pastries"
+      ],
+      "style": [
+        "Modern"
+      ],
+      "vibe": [
+        "Relaxed"
+      ],
+      "time": [
+        "Breakfast",
+        "Morning"
+      ],
+      "light": "Good anytime",
+      "noise": "Moderate",
+      "price": "$$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 9.1,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Casual meal"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Walkable from Airbnb"
+      ],
+      "safety": [],
+      "hood": "Roma/Juárez, CDMX",
+      "desc": "Attractive breakfast and pastry spot, relaxed food-focused morning.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20Nin%20Roma%20CDMX"
+    },
+    {
+      "n": "Meroma",
+      "lat": 19.4173,
+      "lon": -99.1594,
+      "typ": [
+        "Restaurant"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Contemporary Mexican"
+      ],
+      "style": [
+        "Garden",
+        "Design-forward"
+      ],
+      "vibe": [
+        "Sophisticated",
+        "Lively"
+      ],
+      "time": [
+        "Dinner"
+      ],
+      "light": "Good anytime",
+      "noise": "Moderate",
+      "price": "$$$",
+      "rec": [],
+      "grating": 4.7,
+      "greviews": 1300,
+      "score": 8.9,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Special dinner"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Short Uber",
+        "Reservation required"
+      ],
+      "safety": [],
+      "hood": "Roma Norte, CDMX",
+      "desc": "Contemporary Mexican with Italian/Mediterranean touches, plant-filled glass-roofed terrace.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Meroma%20Roma%20Norte%20CDMX"
+    },
+    {
+      "n": "Huset",
+      "lat": 19.4173,
+      "lon": -99.1594,
+      "typ": [
+        "Restaurant"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Mexican"
+      ],
+      "style": [
+        "Garden"
+      ],
+      "vibe": [
+        "Romantic",
+        "Sophisticated"
+      ],
+      "time": [
+        "Dinner"
+      ],
+      "light": "Good anytime",
+      "noise": "Quiet",
+      "price": "$$$",
+      "rec": [],
+      "grating": 4.6,
+      "greviews": 3400,
+      "score": 8.7,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Date night",
+        "Special dinner"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Short Uber",
+        "Reservation required"
+      ],
+      "safety": [],
+      "hood": "Roma Norte, CDMX",
+      "desc": "Lush vine-draped garden setting, greenhouse feel; Mexican/international menu, praised cocktails.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Huset%20Roma%20Norte%20CDMX"
+    },
+    {
+      "n": "La Docena Oyster Bar & Grill",
+      "lat": 19.4173,
+      "lon": -99.1594,
+      "typ": [
+        "Restaurant"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Seafood"
+      ],
+      "style": [
+        "Modern"
+      ],
+      "vibe": [
+        "Lively"
+      ],
+      "time": [
+        "Dinner"
+      ],
+      "light": "Good anytime",
+      "noise": "Moderate",
+      "price": "$$$",
+      "rec": [],
+      "grating": 4.4,
+      "greviews": null,
+      "score": 8.3,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Group dinner"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Short Uber",
+        "Reservation required"
+      ],
+      "safety": [
+        "Seafood-heavy",
+        "Crustacean risk"
+      ],
+      "hood": "Roma Norte, CDMX",
+      "desc": "Oyster-forward seafood, mezcalita cocktails, upscale-casual — Latin America's 50 Best pick.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=La%20Docena%20Oyster%20Bar%20Grill%20Roma%20Norte"
+    },
+    {
+      "n": "Pargot",
+      "lat": 19.418,
+      "lon": -99.166,
+      "typ": [
+        "Restaurant"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Contemporary Mexican"
+      ],
+      "style": [
+        "Art Deco",
+        "Rustic"
+      ],
+      "vibe": [
+        "Intimate"
+      ],
+      "time": [
+        "Dinner"
+      ],
+      "light": "Good anytime",
+      "noise": "Quiet",
+      "price": "$$$",
+      "rec": [
+        "Bib Gourmand"
+      ],
+      "grating": 4.7,
+      "greviews": null,
+      "score": 8.9,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Casual meal",
+        "Date night"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Walk-in friendly"
+      ],
+      "safety": [],
+      "hood": "Cuauhtémoc/Condesa border, CDMX",
+      "desc": "Tiny 4-table Art Deco storefront, chef Alexis Ayala's tight seasonal menu. Walk-in is a gamble — go early/off-peak.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Pargot%20restaurante%20CDMX"
+    },
+    {
+      "n": "Azul Condesa",
+      "lat": 19.4126,
+      "lon": -99.171,
+      "typ": [
+        "Restaurant"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Mexican"
+      ],
+      "style": [
+        "Colonial",
+        "Garden"
+      ],
+      "vibe": [
+        "Relaxed",
+        "Sophisticated"
+      ],
+      "time": [
+        "Dinner"
+      ],
+      "light": "Good anytime",
+      "noise": "Quiet",
+      "price": "$$$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 8.0,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Special dinner"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Short Uber"
+      ],
+      "safety": [],
+      "hood": "Condesa, CDMX",
+      "desc": "Modern-hacienda atmosphere, classic Mexican dishes (chapulines on guacamole, mole negro enchiladas).",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Azul%20Condesa%20restaurante%20CDMX"
+    },
+    {
+      "n": "Toletoche",
+      "lat": 19.414,
+      "lon": -99.165,
+      "typ": [
+        "Restaurant"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Contemporary Mexican"
+      ],
+      "style": [
+        "Modern"
+      ],
+      "vibe": [
+        "Trendy"
+      ],
+      "time": [
+        "Dinner"
+      ],
+      "light": "Good anytime",
+      "noise": "Moderate",
+      "price": "$$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 6.5,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Casual meal"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [],
+      "safety": [],
+      "hood": "Roma/Condesa, CDMX",
+      "desc": "Comes up repeatedly in Roma/Condesa recs for creative small plates — ratings unverified, check before going.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Toletoche%20restaurante%20Roma%20CDMX"
+    },
+    {
+      "n": "Blanco Nieve",
+      "lat": 19.414,
+      "lon": -99.165,
+      "typ": [
+        "Restaurant"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Contemporary Mexican"
+      ],
+      "style": [
+        "Modern"
+      ],
+      "vibe": [
+        "Trendy"
+      ],
+      "time": [
+        "Dinner"
+      ],
+      "light": "Good anytime",
+      "noise": "Moderate",
+      "price": "$$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 6.5,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Casual meal"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [],
+      "safety": [],
+      "hood": "Roma/Condesa, CDMX",
+      "desc": "Comes up repeatedly in Roma/Condesa recs for creative small plates — ratings unverified, check before going.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Blanco%20Nieve%20restaurante%20Roma%20CDMX"
+    },
+    {
+      "n": "Baltra Bar",
+      "lat": 19.4126,
+      "lon": -99.171,
+      "typ": [
+        "Bar"
+      ],
+      "exp": [
+        "Nightlife"
+      ],
+      "food": [
+        "Cocktails"
+      ],
+      "style": [
+        "Modern"
+      ],
+      "vibe": [
+        "Social",
+        "Lively"
+      ],
+      "time": [
+        "Late night",
+        "Dinner"
+      ],
+      "light": "Best at night",
+      "noise": "Moderate",
+      "price": "$$$",
+      "rec": [],
+      "grating": 4.5,
+      "greviews": 1500,
+      "score": 8.5,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Date night",
+        "Group dinner"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Walkable from Airbnb"
+      ],
+      "safety": [],
+      "hood": "Condesa, CDMX",
+      "desc": "Most 'neighborhood' of the serious cocktail bars — good outdoor seating, excellent martinis.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Baltra%20Bar%20Condesa%20CDMX"
+    },
+    {
+      "n": "La Clandestina",
+      "lat": 19.4126,
+      "lon": -99.171,
+      "typ": [
+        "Bar"
+      ],
+      "exp": [
+        "Nightlife"
+      ],
+      "food": [
+        "Mezcal"
+      ],
+      "style": [
+        "Rustic",
+        "Minimalist"
+      ],
+      "vibe": [
+        "Intimate",
+        "Local"
+      ],
+      "time": [
+        "Late night"
+      ],
+      "light": "Best at night",
+      "noise": "Moderate",
+      "price": "$$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 8.2,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Casual meal"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Walk-in friendly",
+        "Walkable from Airbnb"
+      ],
+      "safety": [],
+      "hood": "Condesa, CDMX",
+      "desc": "Semi-underground mezcalería, walk-in only. Staff walk you through regions/production — educational, intimate.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=La%20Clandestina%20mezcaler%C3%ADa%20Condesa%20CDMX"
+    },
+    {
+      "n": "Rubí Wine & Cocktails",
+      "lat": 19.4126,
+      "lon": -99.171,
+      "typ": [
+        "Bar"
+      ],
+      "exp": [
+        "Nightlife"
+      ],
+      "food": [
+        "Wine",
+        "Cocktails"
+      ],
+      "style": [
+        "Rooftop",
+        "Modern",
+        "Has a view"
+      ],
+      "vibe": [
+        "Trendy",
+        "Social"
+      ],
+      "time": [
+        "Afternoon",
+        "Golden hour"
+      ],
+      "light": "Better at sunset",
+      "noise": "Loud",
+      "price": "$$$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 8.0,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Date night"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Walkable from Airbnb"
+      ],
+      "safety": [],
+      "hood": "Condesa, CDMX",
+      "desc": "Opened late 2024, overlooks Parque México directly. Good for afternoon spritz or evening cocktail.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Rub%C3%AD%20Wine%20Cocktails%20Condesa%20CDMX"
+    },
+    {
+      "n": "Condesa DF Rooftop",
+      "lat": 19.4126,
+      "lon": -99.171,
+      "typ": [
+        "Bar",
+        "Restaurant"
+      ],
+      "exp": [
+        "Nightlife"
+      ],
+      "food": [
+        "Cocktails",
+        "Mezcal"
+      ],
+      "style": [
+        "Rooftop",
+        "Design-forward",
+        "Has a view"
+      ],
+      "vibe": [
+        "Trendy",
+        "Sophisticated"
+      ],
+      "time": [
+        "Golden hour",
+        "Dinner"
+      ],
+      "light": "Better at sunset",
+      "noise": "Moderate",
+      "price": "$$$$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 8.4,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Date night",
+        "Special dinner"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Walkable from Airbnb",
+        "Reservation required"
+      ],
+      "safety": [],
+      "hood": "Condesa, CDMX",
+      "desc": "India Mahdavi-designed rooftop under a jacaranda canopy, Japanese-Mexican fusion food, mezcal cocktails.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Condesa%20DF%20Rooftop%20CDMX"
+    },
+    {
+      "n": "Em",
+      "lat": 19.415,
+      "lon": -99.16,
+      "typ": [
+        "Restaurant"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Contemporary Mexican"
+      ],
+      "style": [
+        "Modern"
+      ],
+      "vibe": [
+        "Sophisticated",
+        "Intimate"
+      ],
+      "time": [
+        "Dinner"
+      ],
+      "light": "Good anytime",
+      "noise": "Moderate",
+      "price": "$$$$",
+      "rec": [
+        "Michelin 1 Star"
+      ],
+      "grating": null,
+      "greviews": null,
+      "score": 8.8,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Special dinner"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Reservation required",
+        "Short Uber"
+      ],
+      "safety": [],
+      "hood": "Roma, CDMX",
+      "desc": "Mexican cuisine with Japanese technique. Reservation-based.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Em%20restaurante%20Roma%20CDMX"
+    },
+    {
+      "n": "Ultramarinos Demar",
+      "lat": 19.415,
+      "lon": -99.16,
+      "typ": [
+        "Restaurant"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Mexican",
+        "Seafood"
+      ],
+      "style": [
+        "Modern"
+      ],
+      "vibe": [
+        "Casual"
+      ],
+      "time": [
+        "Lunch",
+        "Dinner"
+      ],
+      "light": "Good anytime",
+      "noise": "Moderate",
+      "price": "$$",
+      "rec": [
+        "Bib Gourmand"
+      ],
+      "grating": null,
+      "greviews": null,
+      "score": 8.0,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Casual meal"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Short Uber"
+      ],
+      "safety": [],
+      "hood": "Roma, CDMX",
+      "desc": "Sister restaurant of Em, easier-access alternative from the same chef.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Ultramarinos%20Demar%20Roma%20CDMX"
+    },
+    {
+      "n": "Martínez",
+      "lat": 19.415,
+      "lon": -99.16,
+      "typ": [
+        "Restaurant",
+        "Bar"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Mexican"
+      ],
+      "style": [
+        "Modern"
+      ],
+      "vibe": [
+        "Trendy",
+        "Social"
+      ],
+      "time": [
+        "Dinner"
+      ],
+      "light": "Good anytime",
+      "noise": "Loud",
+      "price": "$$$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 7.8,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Casual meal",
+        "Group dinner"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Short Uber"
+      ],
+      "safety": [],
+      "hood": "Roma, CDMX",
+      "desc": "Stylish bistro, sister restaurant of Em.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Mart%C3%ADnez%20bistro%20Roma%20CDMX"
+    },
+    {
+      "n": "Falling Piano Brewing Co.",
+      "lat": 19.4173,
+      "lon": -99.1594,
+      "typ": [
+        "Bar"
+      ],
+      "exp": [
+        "Nightlife"
+      ],
+      "food": [
+        "Cocktails"
+      ],
+      "style": [
+        "Rustic"
+      ],
+      "vibe": [
+        "Casual",
+        "Lively"
+      ],
+      "time": [
+        "Late night",
+        "Dinner"
+      ],
+      "light": "Good anytime",
+      "noise": "Loud",
+      "price": "$$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 7.7,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Casual meal",
+        "Group dinner"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Walk-in friendly",
+        "Short Uber"
+      ],
+      "safety": [],
+      "hood": "Roma Norte, CDMX",
+      "desc": "Industrial-chic brewery, piano suspended over the brew tanks. Casual walk-in, good beer & bar food.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Falling%20Piano%20Brewing%20Co%20CDMX"
+    },
+    {
+      "n": "La 89",
+      "lat": 19.4173,
+      "lon": -99.1594,
+      "typ": [
+        "Restaurant"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Tacos",
+        "Street food"
+      ],
+      "style": [
+        "Modern"
+      ],
+      "vibe": [
+        "Casual"
+      ],
+      "time": [
+        "Lunch"
+      ],
+      "light": "Good anytime",
+      "noise": "Moderate",
+      "price": "$",
+      "rec": [
+        "Bib Gourmand"
+      ],
+      "grating": null,
+      "greviews": null,
+      "score": 8.2,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Quick stop",
+        "Casual meal"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Walk-in friendly",
+        "Short Uber"
+      ],
+      "safety": [],
+      "hood": "Roma Norte, CDMX",
+      "desc": "Bright, casual taco/torta counter, genuinely walk-in friendly.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=La%2089%20Roma%20Norte%20tacos%20CDMX"
+    },
+    {
+      "n": "Fonda Fina",
+      "lat": 19.4173,
+      "lon": -99.1594,
+      "typ": [
+        "Restaurant"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Contemporary Mexican",
+        "Regional"
+      ],
+      "style": [
+        "Rustic"
+      ],
+      "vibe": [
+        "Casual"
+      ],
+      "time": [
+        "Lunch",
+        "Dinner"
+      ],
+      "light": "Good anytime",
+      "noise": "Moderate",
+      "price": "$$",
+      "rec": [
+        "Michelin Selected"
+      ],
+      "grating": null,
+      "greviews": null,
+      "score": 8.3,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Casual meal"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Walk-in friendly",
+        "Short Uber"
+      ],
+      "safety": [],
+      "hood": "Roma Norte, CDMX",
+      "desc": "Casual fonda-style cooking from a Quintonil-trained chef. Walk-ins fine outside peak lunch.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Fonda%20Fina%20Roma%20Norte%20CDMX"
+    },
+    {
+      "n": "Licorería Limantour",
+      "lat": 19.415,
+      "lon": -99.16,
+      "typ": [
+        "Bar"
+      ],
+      "exp": [
+        "Nightlife"
+      ],
+      "food": [
+        "Cocktails"
+      ],
+      "style": [
+        "Modern"
+      ],
+      "vibe": [
+        "Social",
+        "Lively"
+      ],
+      "time": [
+        "Late night"
+      ],
+      "light": "Best at night",
+      "noise": "Loud",
+      "price": "$$$",
+      "rec": [
+        "World's 50 Best"
+      ],
+      "grating": 4.4,
+      "greviews": 3600,
+      "score": 8.7,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Group dinner"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Short Uber",
+        "Walk-in friendly"
+      ],
+      "safety": [],
+      "hood": "Roma, CDMX",
+      "desc": "#32 World's Best Bars. Indoor bar plus outdoor seating — one of the more reliable walk-in options among top-ranked bars.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Licorer%C3%ADa%20Limantour%20Roma%20CDMX"
+    },
+    {
+      "n": "Tlécan",
+      "lat": 19.42,
+      "lon": -99.16,
+      "typ": [
+        "Bar"
+      ],
+      "exp": [
+        "Nightlife"
+      ],
+      "food": [
+        "Mezcal"
+      ],
+      "style": [
+        "Design-forward"
+      ],
+      "vibe": [
+        "Sophisticated",
+        "Intimate"
+      ],
+      "time": [
+        "Late night"
+      ],
+      "light": "Best at night",
+      "noise": "Loud",
+      "price": "$$$$",
+      "rec": [
+        "World's 50 Best"
+      ],
+      "grating": null,
+      "greviews": null,
+      "score": 9.2,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Date night"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Reservation required",
+        "Short Uber"
+      ],
+      "safety": [],
+      "hood": "CDMX",
+      "desc": "#20 World's 50 Best Bars. Cave-like pre-Hispanic-inspired design, mezcal/rare agave spirits. Best design-forward mezcal experience in the city.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Tl%C3%A9can%20bar%20CDMX"
+    },
+    {
+      "n": "El Califa de León",
+      "lat": 19.441,
+      "lon": -99.162,
+      "typ": [
+        "Restaurant"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Tacos",
+        "Street food"
+      ],
+      "style": [
+        "Rustic"
+      ],
+      "vibe": [
+        "Local",
+        "Touristy"
+      ],
+      "time": [
+        "Late night",
+        "Dinner"
+      ],
+      "light": "Best at night",
+      "noise": "Loud",
+      "price": "$",
+      "rec": [
+        "Michelin 1 Star"
+      ],
+      "grating": null,
+      "greviews": null,
+      "score": 9.0,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Late night"
+      ],
+      "effort": [
+        "Moderate effort"
+      ],
+      "conv": [
+        "Walk-in friendly",
+        "Long queue"
+      ],
+      "safety": [],
+      "hood": "San Rafael, CDMX",
+      "desc": "World's first Michelin-starred taco stand: one star, zero seats, $3-5 tacos standing, cash only. Go for the novelty and the tacos, not atmosphere.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=El%20Califa%20de%20Le%C3%B3n%20taquer%C3%ADa%20San%20Rafael%20CDMX"
+    },
+    {
+      "n": "Tacos de Canasta Los Especiales",
+      "lat": 19.4326,
+      "lon": -99.1332,
+      "typ": [
+        "Restaurant"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Tacos",
+        "Street food"
+      ],
+      "style": [
+        "Rustic"
+      ],
+      "vibe": [
+        "Local"
+      ],
+      "time": [
+        "Lunch"
+      ],
+      "light": "Good anytime",
+      "noise": "Moderate",
+      "price": "$",
+      "rec": [
+        "Michelin Selected"
+      ],
+      "grating": null,
+      "greviews": null,
+      "score": 8.5,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Quick stop"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Walk-in friendly",
+        "Metro-friendly"
+      ],
+      "safety": [],
+      "hood": "Centro Histórico, CDMX",
+      "desc": "Michelin-recommended classic stand-and-eat taquería with a loyal local following.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Tacos%20de%20Canasta%20Los%20Especiales%20Centro%20CDMX"
+    },
+    {
+      "n": "Pujol",
+      "lat": 19.4326,
+      "lon": -99.1962,
+      "typ": [
+        "Restaurant"
+      ],
+      "exp": [
+        "Food"
+      ],
+      "food": [
+        "Contemporary Mexican",
+        "Fine dining"
+      ],
+      "style": [
+        "Modern",
+        "Minimalist"
+      ],
+      "vibe": [
+        "Sophisticated"
+      ],
+      "time": [
+        "Lunch",
+        "Dinner"
+      ],
+      "light": "Good anytime",
+      "noise": "Quiet",
+      "price": "$$$$",
+      "rec": [
+        "Michelin 2 Stars"
+      ],
+      "grating": 4.2,
+      "greviews": null,
+      "score": 9.0,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Special dinner"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Reservation required",
+        "Short Uber"
+      ],
+      "safety": [],
+      "hood": "Polanco, CDMX",
+      "desc": "Pioneer of modern Mexican fine dining. Reviews more mixed than the hype. Best same-day shot: counter/omakase seatings or the walk-in terrace.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Pujol%20restaurante%20Polanco%20CDMX"
+    },
+    {
+      "n": "El Mayor",
+      "lat": 19.4326,
+      "lon": -99.1332,
+      "typ": [
+        "Restaurant"
+      ],
+      "exp": [
+        "Food",
+        "Architecture"
+      ],
+      "food": [
+        "Contemporary Mexican"
+      ],
+      "style": [
+        "Scenic",
+        "Rooftop",
+        "Has a view"
+      ],
+      "vibe": [
+        "Sophisticated"
+      ],
+      "time": [
+        "Lunch",
+        "Golden hour"
+      ],
+      "light": "Better at sunset",
+      "noise": "Quiet",
+      "price": "$$$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 8.5,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Special dinner"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Reservation required",
+        "Metro-friendly"
+      ],
+      "safety": [],
+      "hood": "Centro Histórico, CDMX",
+      "desc": "Contemporary Mexican on a terrace overlooking the Templo Mayor ruins and the Metropolitan Cathedral.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=El%20Mayor%20restaurante%20Centro%20Hist%C3%B3rico%20CDMX"
+    },
+    {
+      "n": "Cityzen (Sofitel Reforma)",
+      "lat": 19.427,
+      "lon": -99.167,
+      "typ": [
+        "Bar",
+        "Viewpoint"
+      ],
+      "exp": [
+        "Nightlife"
+      ],
+      "food": [
+        "Mezcal",
+        "Cocktails"
+      ],
+      "style": [
+        "Rooftop",
+        "Modern",
+        "Has a view"
+      ],
+      "vibe": [
+        "Sophisticated"
+      ],
+      "time": [
+        "Golden hour",
+        "Late night"
+      ],
+      "light": "Better at sunset",
+      "noise": "Moderate",
+      "price": "$$$$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 8.0,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Date night"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Metro-friendly"
+      ],
+      "safety": [],
+      "hood": "Reforma, CDMX",
+      "desc": "38th floor, 180° views of Chapultepec Castle. Well-regarded mezcal/tequila program.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Cityzen%20Sofitel%20Mexico%20City%20Reforma"
+    },
+    {
+      "n": "Balmori Roofbar",
+      "lat": 19.4173,
+      "lon": -99.1594,
+      "typ": [
+        "Bar"
+      ],
+      "exp": [
+        "Nightlife"
+      ],
+      "food": [
+        "Cocktails"
+      ],
+      "style": [
+        "Rooftop",
+        "Has a view"
+      ],
+      "vibe": [
+        "Trendy"
+      ],
+      "time": [
+        "Golden hour",
+        "Late night"
+      ],
+      "light": "Better at sunset",
+      "noise": "Moderate",
+      "price": "$$$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 7.8,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Group dinner"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Short Uber"
+      ],
+      "safety": [],
+      "hood": "Centro/Roma Norte, CDMX",
+      "desc": "Pink-couch glamour rooftop.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Balmori%20Roofbar%20CDMX"
+    },
+    {
+      "n": "Terraza Cha Cha Chá",
+      "lat": 19.42,
+      "lon": -99.16,
+      "typ": [
+        "Bar"
+      ],
+      "exp": [
+        "Nightlife"
+      ],
+      "food": [
+        "Cocktails"
+      ],
+      "style": [
+        "Rooftop",
+        "Has a view"
+      ],
+      "vibe": [
+        "Lively"
+      ],
+      "time": [
+        "Golden hour",
+        "Late night"
+      ],
+      "light": "Better at sunset",
+      "noise": "Loud",
+      "price": "$$$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 7.8,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Group dinner"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Short Uber"
+      ],
+      "safety": [],
+      "hood": "CDMX",
+      "desc": "Rooftop with Monumento a la Revolución views.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Terraza%20Cha%20Cha%20Ch%C3%A1%20CDMX"
+    },
+    {
+      "n": "Supra Roma",
+      "lat": 19.415,
+      "lon": -99.16,
+      "typ": [
+        "Bar"
+      ],
+      "exp": [
+        "Nightlife"
+      ],
+      "food": [
+        "Cocktails"
+      ],
+      "style": [
+        "Rooftop",
+        "Design-forward",
+        "Has a view"
+      ],
+      "vibe": [
+        "Trendy"
+      ],
+      "time": [
+        "Golden hour",
+        "Late night"
+      ],
+      "light": "Better at sunset",
+      "noise": "Moderate",
+      "price": "$$$",
+      "rec": [],
+      "grating": null,
+      "greviews": null,
+      "score": 7.8,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Date night"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Short Uber"
+      ],
+      "safety": [],
+      "hood": "Roma, CDMX",
+      "desc": "360° art-driven rooftop design.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Supra%20Roma%20rooftop%20CDMX"
+    },
+    {
+      "n": "Handshake Speakeasy",
+      "lat": 19.427,
+      "lon": -99.159,
+      "typ": [
+        "Bar"
+      ],
+      "exp": [
+        "Nightlife"
+      ],
+      "food": [
+        "Cocktails"
+      ],
+      "style": [
+        "Design-forward",
+        "Minimalist"
+      ],
+      "vibe": [
+        "Intimate",
+        "Sophisticated"
+      ],
+      "time": [
+        "Late night"
+      ],
+      "light": "Best at night",
+      "noise": "Moderate",
+      "price": "$$$$",
+      "rec": [
+        "World's 50 Best"
+      ],
+      "grating": null,
+      "greviews": null,
+      "score": 9.4,
+      "src": [
+        "Travel agent"
+      ],
+      "fit": [
+        "Good for all three",
+        "Good for Eric",
+        "Good for Julia",
+        "Good for Livia"
+      ],
+      "occ": [
+        "Date night"
+      ],
+      "effort": [
+        "Low effort"
+      ],
+      "conv": [
+        "Reservation required"
+      ],
+      "safety": [],
+      "hood": "Juárez, CDMX",
+      "desc": "Currently #3 World's 50 Best Bars, genuinely excellent, hidden entrance. Strict reservation-only.",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Handshake%20Speakeasy%20Ju%C3%A1rez%20CDMX"
+    }
+  ]
+};
 const PLACES = DATA.places;
 const AIRBNB = DATA.airbnb;
 
@@ -286,6 +5297,7 @@ const FILTER_GROUPS = [
   { label: "Vibe", key: "vibe" },
   { label: "Best time", key: "time" },
   { label: "Light condition", key: "light", single:true },
+  { label: "Noise level", key: "noise", single:true },
   { label: "Price", key: "price", single:true },
   { label: "Recognition", key: "rec" },
   { label: "Source", key: "src" },
