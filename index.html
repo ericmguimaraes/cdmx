@@ -262,7 +262,7 @@ footer{ text-align:center; padding:24px; color:var(--muted); font-size:0.78rem; 
       <span class="count-pill" id="countPill">89 places</span>
       <button class="theme-toggle" id="themeToggle">☀️ Light mode</button>
     </div>
-    <div class="status" id="locStatus">Using Airbnb (Av. Insurgentes Sur 383) as your reference point. <button data-action="use-live">Use my live location instead</button></div>
+    <div class="status" id="locStatus">Locating you for distances… <button data-action="use-airbnb">Use Airbnb reference instead</button></div>
   </div>
 
   <div class="layout">
@@ -5286,7 +5286,7 @@ const DATA = {
   ]
 };
 const PLACES = DATA.places;
-const AIRBNB = DATA.airbnb;
+const AIRBNB = { lat: DATA.airbnb[0], lon: DATA.airbnb[1] };
 
 // ---------- Filter taxonomy (group label -> field key) ----------
 const FILTER_GROUPS = [
@@ -5504,7 +5504,9 @@ const LIVE_STATUS_HTML = 'Using your live location for distances. <button data-a
 function useLiveLocation(){
   const statusEl = document.getElementById("locStatus");
   if (!navigator.geolocation){
-    statusEl.textContent = "Geolocation isn't available in this browser — staying on the Airbnb reference point.";
+    refPoint = AIRBNB; userLoc = null;
+    statusEl.innerHTML = "Geolocation isn't available in this browser — using the Airbnb reference point instead. <button data-action=\"use-live\">Try my live location</button>";
+    render();
     return;
   }
   statusEl.textContent = "Locating you…";
@@ -5516,7 +5518,9 @@ function useLiveLocation(){
       render();
     },
     err => {
-      statusEl.textContent = "Couldn't get your location (" + err.message + ") — staying on the Airbnb reference point.";
+      refPoint = AIRBNB; userLoc = null;
+      statusEl.innerHTML = "Couldn't get your location (" + err.message + ") — using the Airbnb reference point instead. <button data-action=\"use-live\">Try my live location</button>";
+      render();
     },
     { timeout: 8000 }
   );
@@ -5533,6 +5537,8 @@ document.getElementById("locStatus").addEventListener("click", (e) => {
   if (action === "use-live") useLiveLocation();
   else if (action === "use-airbnb") useAirbnbLocation();
 });
+
+useLiveLocation();
 
 // ---------- Theme (dark by default) ----------
 function applyTheme(theme){
